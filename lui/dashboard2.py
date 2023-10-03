@@ -14,7 +14,7 @@ layer = pdk.Layer(
     auto_highlight=True, # Realçar hexágonos quando cursor passar por cima
     elevation_scale=50, # Altura dos hexágonos
     pickable=True, # Permitir que os hexágonos sejam selecionáveis
-    elevation_range=[0, 3000], # Definir a faixa de altura dos hexágonos
+    elevation_range=[0, 2000], # Definir a faixa de altura dos hexágonos
     extruded=True, # Dimensão da altura dos hexágonos
     coverage=1) # Cobertura da camada
 
