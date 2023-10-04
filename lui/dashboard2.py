@@ -26,7 +26,7 @@ view_state = pdk.ViewState(
     min_zoom=5, # Especificar o nível de zoom mínimo permitido
     max_zoom=15, # Especificar o nível de zoom máximo permitido
     pitch=40.5, # Controlar inclinação do mapa
-    bearing=-27.36) # Definir rotação do mapa
+    bearing=-28.36) # Definir rotação do mapa
 
 # Combinação em um objeto 'Deck'
 r = pdk.Deck(layers=[layer], initial_view_state=view_state)
