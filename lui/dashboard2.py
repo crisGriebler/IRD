@@ -20,7 +20,7 @@ layer = pdk.Layer(
 
 # Definição da visão
 view_state = pdk.ViewState(
-    longitude= -43.7763403, # Verificar longitude no Google Maps da região que vc está buscando
+    longitude= -43.776340, # Verificar longitude no Google Maps da região que vc está buscando
     latitude= -22.9131566, # Verificar latitude no Google Maps  
     zoom=6, # Definir zoom inicial do mapa
     min_zoom=5, # Especificar o nível de zoom mínimo permitido
