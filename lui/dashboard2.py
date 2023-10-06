@@ -12,7 +12,7 @@ layer = pdk.Layer(
     df, # DataFrame que contém seus dados
     get_position=['longitude', 'latitude'], # Colunas que possuem long. e lat. 
     auto_highlight=True, # Realçar hexágonos quando cursor passar por cima
-    elevation_scale=50, # Altura dos hexágonos
+    elevation_scale=60, # Altura dos hexágonos
     pickable=True, # Permitir que os hexágonos sejam selecionáveis
     elevation_range=[0, 2000], # Definir a faixa de altura dos hexágonos
     extruded=True, # Dimensão da altura dos hexágonos
