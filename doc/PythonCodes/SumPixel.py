@@ -19,4 +19,4 @@ mhd_file_path = 'Counts\cil1\cil1_89.mhd'
 total_sum = sum_pixel_values(mhd_file_path)
 
 # Print the result
-print(f"Sum of pixel this  values in {mhd_file_path}: {total_sum}")
+print(f"Sum of pixel values in {mhd_file_path}: {total_sum}")
