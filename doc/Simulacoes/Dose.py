@@ -5,10 +5,10 @@ import numpy as np
 #path_dose_uncertainty=
 
 
-f="setintensity/1e8/c1content-Dose.mhd"
-g="setintensity/1e8/c2content-Dose.mhd"
-h="setintensity/1e8/c3content-Dose.mhd"
-i="setintensity/1e8/c4content-Dose.mhd"
+f="macros/outputnew/c1content-Dose.mhd"
+g="macros/outputnew/c2content-Dose.mhd"
+h="macros/outputnew/c3content-Dose.mhd"
+i="macros/outputnew/c4content-Dose.mhd"
 
 doseMap1 = np.fromfile(f.replace('mhd','raw'), dtype=np.float32)
 dose1 = doseMap1.sum()/len(doseMap1)
