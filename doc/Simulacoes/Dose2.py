@@ -5,10 +5,10 @@ import numpy as np
 #path_dose_uncertainty=
 
 
-f="macros/outputnew/c1content-Dose.mhd"
-g="macros/outputnew/c2content-Dose.mhd"
-h="macros/outputnew/c3content-Dose.mhd"
-i="macros/outputnew/c4content-Dose.mhd"
+f="macros2/outputnew/c1content-Dose.mhd"
+g="macros2/outputnew/c2content-Dose.mhd"
+h="macros2/outputnew/c3content-Dose.mhd"
+i="macros2/outputnew/c4content-Dose.mhd"
 
 doseMap1 = np.fromfile(f.replace('mhd','raw'), dtype=np.float32)
 len1 = len(doseMap1)
