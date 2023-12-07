@@ -1,9 +1,8 @@
+##
+## Esse código é para cálculo de Dose da pasta macros2 com a atividade correta de cada cilindro.
+##
+
 import numpy as np 
-
-#path_output = "output/"
-#path_dose_squared=
-#path_dose_uncertainty=
-
 
 f="macros2/outputnew/c1content-Dose.mhd"
 g="macros2/outputnew/c2content-Dose.mhd"
@@ -15,15 +14,15 @@ len1 = len(doseMap1)
 dose1 = doseMap1.sum()/len1
 
 doseMap2 = np.fromfile(g.replace('mhd','raw'), dtype=np.float32)
-len2 =len(doseMap2)
+len2 = len(doseMap2)
 dose2 = doseMap2.sum()/len2
 
 doseMap3 = np.fromfile(h.replace('mhd','raw'), dtype=np.float32)
-len3 =len(doseMap3)
+len3 = len(doseMap3)
 dose3 = doseMap3.sum()/len(doseMap3)
 
 doseMap4 = np.fromfile(i.replace('mhd','raw'), dtype=np.float32)
-len4 =len(doseMap4)
+len4 = len(doseMap4)
 dose4 = doseMap4.sum()/len(doseMap4)
 
 
@@ -37,5 +36,3 @@ print("Tamanho do cilindro 3 =", len3)
 print("cilindro 4 = ", dose4, "Gy ")
 print("Tamanho do cilindro 4 =", len4)
 print('*************************\n')
-
-
