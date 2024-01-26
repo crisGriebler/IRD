@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -104.4 -104.4 -90.4167
+CenterOfRotation = 0 0 0
+ElementSpacing = 7.2 7.2 5.16667
+DimSize = 30 30 36
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = ACR1-Dose-Uncertainty.raw

@@ -6,10 +6,10 @@ import numpy as np
 #path_dose_uncertainty=
 
 
-f="setintensity/1e8/c1content-Dose-Uncertainty.mhd"
-g="setintensity/1e8/c2content-Dose-Uncertainty.mhd"
-h="setintensity/1e8/c3content-Dose-Uncertainty.mhd"
-i="setintensity/1e8/c4content-Dose-Uncertainty.mhd"
+f="macros_Adet_jan/outputnew/c1content-Dose-Uncertainty.mhd"
+g="macros_Adet_jan/outputnew/c2content-Dose-Uncertainty.mhd"
+h="macros_Adet_jan/outputnew/c3content-Dose-Uncertainty.mhd"
+i="macros_Adet_jan/outputnew/c4content-Dose-Uncertainty.mhd"
 
 
 UndoseMap1 = np.fromfile(f.replace('mhd','raw'), dtype=np.float32)

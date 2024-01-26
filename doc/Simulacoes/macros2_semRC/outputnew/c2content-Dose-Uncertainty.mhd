@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -5.57143 -5.57143 -17.4125
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.857143 0.857143 4.975
+DimSize = 14 14 8
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = c2content-Dose-Uncertainty.raw
