@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -7.61905 -7.61905 -17.4125
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.761905 0.761905 4.975
+DimSize = 21 21 8
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = c3content-Dose.raw
