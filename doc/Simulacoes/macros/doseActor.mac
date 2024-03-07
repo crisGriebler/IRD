@@ -1,0 +1,54 @@
+# ACR
+/gate/actor/addActor                                              DoseActor  ACR1_actor
+/gate/actor/ACR1_actor/attachTo                                       ACR1
+/gate/actor/ACR1_actor/stepHitType                                    random
+/gate/actor/ACR1_actor/setResolution                                  30 30 36
+/gate/actor/ACR1_actor/enableDose                                     true
+/gate/actor/ACR1_actor/enableSquaredDose                              true
+/gate/actor/ACR1_actor/enableUncertaintyDose                          true
+/gate/actor/ACR1_actor/save                                           outputnew/ACR1.mhd
+
+# content cylinder 1 (2 ml)
+/gate/actor/addActor                                              DoseActor  c1content_actor
+/gate/actor/c1content_actor/attachTo                                       c1content
+/gate/actor/c1content_actor/stepHitType                                    random
+/gate/actor/c1content_actor/setResolution                                  10 10 8
+/gate/actor/c1content_actor/enableDose                                     true
+/gate/actor/c1content_actor/enableSquaredDose                              true
+/gate/actor/c1content_actor/enableUncertaintyDose                          true
+/gate/actor/c1content_actor/save                                           outputnew/c1content.mhd
+
+# content cylinder 2 (4,5 ml)
+/gate/actor/addActor                                              DoseActor  c2content_actor
+/gate/actor/c2content_actor/attachTo                                       c2content
+/gate/actor/c2content_actor/stepHitType                                    random
+/gate/actor/c2content_actor/setResolution                                  14 14 8
+/gate/actor/c2content_actor/enableDose                                     true
+/gate/actor/c2content_actor/enableSquaredDose                              true
+/gate/actor/c2content_actor/enableUncertaintyDose                          true
+/gate/actor/c2content_actor/save                                           outputnew/c2content.mhd 
+
+# content cylinder 3 (8 ml)
+/gate/actor/addActor                                              DoseActor  c3content_actor
+/gate/actor/c3content_actor/attachTo                                       c3content
+/gate/actor/c3content_actor/stepHitType                                    random
+/gate/actor/c3content_actor/setResolution                                  21 21 8
+/gate/actor/c3content_actor/enableDose                                     true
+/gate/actor/c3content_actor/enableSquaredDose                              true
+/gate/actor/c3content_actor/enableUncertaintyDose                          true
+/gate/actor/c3content_actor/save                                           outputnew/c3content.mhd
+
+# content cylinder 4 (19 ml)
+/gate/actor/addActor                                              DoseActor  c4content_actor
+/gate/actor/c4content_actor/attachTo                                       c4content
+/gate/actor/c4content_actor/stepHitType                                    random
+/gate/actor/c4content_actor/setResolution                                  28 28 8
+/gate/actor/c4content_actor/enableDose                                     true
+/gate/actor/c4content_actor/enableSquaredDose                              true
+/gate/actor/c4content_actor/enableUncertaintyDose                          true
+/gate/actor/c4content_actor/save                                           outputnew/c4content.mhd
+
+
+/gate/actor/addActor                                              SimulationStatisticActor stat
+/gate/actor/stat/save                                             outputnew/ACR.txt
+/gate/actor/stat/saveEveryNSeconds                                60
