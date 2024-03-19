@@ -2744,3 +2744,2092 @@ Alternately, you can install this by running `pip install pycaret[models]`
   warnings.warn(
 
 2024-03-19 12:03:59,362:INFO:setup() successfully completed in 0.71s...............
+2024-03-19 12:04:41,128:INFO:Visual Rendered Successfully
+2024-03-19 12:05:32,232:INFO:Visual Rendered Successfully
+2024-03-19 12:07:20,936:INFO:Initializing compare_models()
+2024-03-19 12:07:20,936:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, include=None, fold=None, round=4, cross_validation=True, sort=MASE, n_select=4, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MASE', 'n_select': 4, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.time_series.forecasting.oop.TSForecastingExperiment'>}, exclude=None)
+2024-03-19 12:07:20,936:INFO:Checking exceptions
+2024-03-19 12:07:20,936:INFO:Preparing display monitor
+2024-03-19 12:07:20,993:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:713: UserWarning:
+
+Unsupported estimator `ensemble_forecaster` for method `compare_models()`, removing from model_library
+
+
+2024-03-19 12:07:20,993:INFO:Initializing Naive Forecaster
+2024-03-19 12:07:20,993:INFO:Total runtime is 0.0 minutes
+2024-03-19 12:07:20,998:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:20,998:INFO:Initializing create_model()
+2024-03-19 12:07:20,998:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=naive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:20,998:INFO:Checking exceptions
+2024-03-19 12:07:20,998:INFO:Importing libraries
+2024-03-19 12:07:20,998:INFO:Copying training dataset
+2024-03-19 12:07:21,015:INFO:Defining folds
+2024-03-19 12:07:21,015:INFO:Declaring metric variables
+2024-03-19 12:07:21,025:INFO:Importing untrained model
+2024-03-19 12:07:21,033:INFO:Naive Forecaster Imported successfully
+2024-03-19 12:07:21,042:INFO:Starting cross validation
+2024-03-19 12:07:21,042:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:30,258:INFO:Calculating mean and std
+2024-03-19 12:07:30,272:INFO:Creating metrics dataframe
+2024-03-19 12:07:30,288:INFO:Uploading results into container
+2024-03-19 12:07:30,288:INFO:Uploading model into container now
+2024-03-19 12:07:30,288:INFO:_master_model_container: 1
+2024-03-19 12:07:30,288:INFO:_display_container: 2
+2024-03-19 12:07:30,288:INFO:NaiveForecaster()
+2024-03-19 12:07:30,288:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:31,294:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:31,294:INFO:Creating metrics dataframe
+2024-03-19 12:07:31,305:INFO:Initializing Grand Means Forecaster
+2024-03-19 12:07:31,305:INFO:Total runtime is 0.1718510429064433 minutes
+2024-03-19 12:07:31,305:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:31,305:INFO:Initializing create_model()
+2024-03-19 12:07:31,305:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=grand_means, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:31,305:INFO:Checking exceptions
+2024-03-19 12:07:31,305:INFO:Importing libraries
+2024-03-19 12:07:31,305:INFO:Copying training dataset
+2024-03-19 12:07:31,305:INFO:Defining folds
+2024-03-19 12:07:31,305:INFO:Declaring metric variables
+2024-03-19 12:07:31,324:INFO:Importing untrained model
+2024-03-19 12:07:31,328:INFO:Grand Means Forecaster Imported successfully
+2024-03-19 12:07:31,340:INFO:Starting cross validation
+2024-03-19 12:07:31,340:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:40,391:INFO:Calculating mean and std
+2024-03-19 12:07:40,391:INFO:Creating metrics dataframe
+2024-03-19 12:07:40,423:INFO:Uploading results into container
+2024-03-19 12:07:40,423:INFO:Uploading model into container now
+2024-03-19 12:07:40,423:INFO:_master_model_container: 2
+2024-03-19 12:07:40,423:INFO:_display_container: 2
+2024-03-19 12:07:40,423:INFO:NaiveForecaster(strategy='mean')
+2024-03-19 12:07:40,423:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:40,785:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:40,785:INFO:Creating metrics dataframe
+2024-03-19 12:07:40,827:INFO:Initializing Polynomial Trend Forecaster
+2024-03-19 12:07:40,827:INFO:Total runtime is 0.33056599696477257 minutes
+2024-03-19 12:07:40,836:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:40,836:INFO:Initializing create_model()
+2024-03-19 12:07:40,836:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=polytrend, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:40,836:INFO:Checking exceptions
+2024-03-19 12:07:40,836:INFO:Importing libraries
+2024-03-19 12:07:40,836:INFO:Copying training dataset
+2024-03-19 12:07:40,851:INFO:Defining folds
+2024-03-19 12:07:40,859:INFO:Declaring metric variables
+2024-03-19 12:07:40,868:INFO:Importing untrained model
+2024-03-19 12:07:40,882:INFO:Polynomial Trend Forecaster Imported successfully
+2024-03-19 12:07:40,908:INFO:Starting cross validation
+2024-03-19 12:07:40,908:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:52,436:INFO:Calculating mean and std
+2024-03-19 12:07:52,437:INFO:Creating metrics dataframe
+2024-03-19 12:07:52,445:INFO:Uploading results into container
+2024-03-19 12:07:52,445:INFO:Uploading model into container now
+2024-03-19 12:07:52,445:INFO:_master_model_container: 3
+2024-03-19 12:07:52,445:INFO:_display_container: 2
+2024-03-19 12:07:52,445:INFO:PolynomialTrendForecaster()
+2024-03-19 12:07:52,445:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:52,688:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:52,688:INFO:Creating metrics dataframe
+2024-03-19 12:07:52,704:INFO:Initializing ARIMA
+2024-03-19 12:07:52,704:INFO:Total runtime is 0.5285090406735738 minutes
+2024-03-19 12:07:52,704:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:52,704:INFO:Initializing create_model()
+2024-03-19 12:07:52,704:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:52,704:INFO:Checking exceptions
+2024-03-19 12:07:52,704:INFO:Importing libraries
+2024-03-19 12:07:52,704:INFO:Copying training dataset
+2024-03-19 12:07:52,721:INFO:Defining folds
+2024-03-19 12:07:52,721:INFO:Declaring metric variables
+2024-03-19 12:07:52,726:INFO:Importing untrained model
+2024-03-19 12:07:52,733:INFO:ARIMA Imported successfully
+2024-03-19 12:07:52,741:INFO:Starting cross validation
+2024-03-19 12:07:52,741:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:52,811:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning: Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+  warn('Non-stationary starting autoregressive parameters'
+
+2024-03-19 12:07:52,867:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:07:52,898:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:07:52,978:INFO:Calculating mean and std
+2024-03-19 12:07:52,978:INFO:Creating metrics dataframe
+2024-03-19 12:07:52,991:INFO:Uploading results into container
+2024-03-19 12:07:52,991:INFO:Uploading model into container now
+2024-03-19 12:07:52,991:INFO:_master_model_container: 4
+2024-03-19 12:07:52,991:INFO:_display_container: 2
+2024-03-19 12:07:52,991:INFO:ARIMA()
+2024-03-19 12:07:52,991:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:53,219:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:53,219:INFO:Creating metrics dataframe
+2024-03-19 12:07:53,260:INFO:Initializing Auto ARIMA
+2024-03-19 12:07:53,260:INFO:Total runtime is 0.5377691825230917 minutes
+2024-03-19 12:07:53,260:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:53,260:INFO:Initializing create_model()
+2024-03-19 12:07:53,260:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:53,260:INFO:Checking exceptions
+2024-03-19 12:07:53,260:INFO:Importing libraries
+2024-03-19 12:07:53,260:INFO:Copying training dataset
+2024-03-19 12:07:53,275:INFO:Defining folds
+2024-03-19 12:07:53,275:INFO:Declaring metric variables
+2024-03-19 12:07:53,275:INFO:Importing untrained model
+2024-03-19 12:07:53,287:INFO:Auto ARIMA Imported successfully
+2024-03-19 12:07:53,299:INFO:Starting cross validation
+2024-03-19 12:07:53,299:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:53,784:INFO:Calculating mean and std
+2024-03-19 12:07:53,784:INFO:Creating metrics dataframe
+2024-03-19 12:07:53,784:INFO:Uploading results into container
+2024-03-19 12:07:53,784:INFO:Uploading model into container now
+2024-03-19 12:07:53,784:INFO:_master_model_container: 5
+2024-03-19 12:07:53,784:INFO:_display_container: 2
+2024-03-19 12:07:53,784:INFO:AutoARIMA(random_state=42, suppress_warnings=True)
+2024-03-19 12:07:53,800:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:54,039:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:54,039:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,055:INFO:Initializing Exponential Smoothing
+2024-03-19 12:07:54,055:INFO:Total runtime is 0.5510206937789918 minutes
+2024-03-19 12:07:54,055:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:54,055:INFO:Initializing create_model()
+2024-03-19 12:07:54,055:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=exp_smooth, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:54,055:INFO:Checking exceptions
+2024-03-19 12:07:54,055:INFO:Importing libraries
+2024-03-19 12:07:54,055:INFO:Copying training dataset
+2024-03-19 12:07:54,071:INFO:Defining folds
+2024-03-19 12:07:54,071:INFO:Declaring metric variables
+2024-03-19 12:07:54,079:INFO:Importing untrained model
+2024-03-19 12:07:54,087:INFO:Exponential Smoothing Imported successfully
+2024-03-19 12:07:54,102:INFO:Starting cross validation
+2024-03-19 12:07:54,102:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:54,185:INFO:Calculating mean and std
+2024-03-19 12:07:54,185:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,185:INFO:Uploading results into container
+2024-03-19 12:07:54,185:INFO:Uploading model into container now
+2024-03-19 12:07:54,185:INFO:_master_model_container: 6
+2024-03-19 12:07:54,185:INFO:_display_container: 2
+2024-03-19 12:07:54,200:INFO:ExponentialSmoothing(sp=1, trend='add')
+2024-03-19 12:07:54,200:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:54,378:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:54,394:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,410:INFO:Initializing ETS
+2024-03-19 12:07:54,410:INFO:Total runtime is 0.5569345633188885 minutes
+2024-03-19 12:07:54,424:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:54,424:INFO:Initializing create_model()
+2024-03-19 12:07:54,424:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=ets, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:54,424:INFO:Checking exceptions
+2024-03-19 12:07:54,424:INFO:Importing libraries
+2024-03-19 12:07:54,424:INFO:Copying training dataset
+2024-03-19 12:07:54,424:INFO:Defining folds
+2024-03-19 12:07:54,424:INFO:Declaring metric variables
+2024-03-19 12:07:54,435:INFO:Importing untrained model
+2024-03-19 12:07:54,442:INFO:ETS Imported successfully
+2024-03-19 12:07:54,458:INFO:Starting cross validation
+2024-03-19 12:07:54,458:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:54,565:INFO:Calculating mean and std
+2024-03-19 12:07:54,565:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,565:INFO:Uploading results into container
+2024-03-19 12:07:54,565:INFO:Uploading model into container now
+2024-03-19 12:07:54,565:INFO:_master_model_container: 7
+2024-03-19 12:07:54,565:INFO:_display_container: 2
+2024-03-19 12:07:54,565:INFO:AutoETS(trend='add')
+2024-03-19 12:07:54,565:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:54,770:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:54,770:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,801:INFO:Initializing Theta Forecaster
+2024-03-19 12:07:54,801:INFO:Total runtime is 0.5634624640146892 minutes
+2024-03-19 12:07:54,801:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:54,801:INFO:Initializing create_model()
+2024-03-19 12:07:54,801:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=theta, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:54,801:INFO:Checking exceptions
+2024-03-19 12:07:54,801:INFO:Importing libraries
+2024-03-19 12:07:54,801:INFO:Copying training dataset
+2024-03-19 12:07:54,817:INFO:Defining folds
+2024-03-19 12:07:54,817:INFO:Declaring metric variables
+2024-03-19 12:07:54,825:INFO:Importing untrained model
+2024-03-19 12:07:54,833:INFO:Theta Forecaster Imported successfully
+2024-03-19 12:07:54,845:INFO:Starting cross validation
+2024-03-19 12:07:54,847:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:54,954:INFO:Calculating mean and std
+2024-03-19 12:07:54,956:INFO:Creating metrics dataframe
+2024-03-19 12:07:54,956:INFO:Uploading results into container
+2024-03-19 12:07:54,956:INFO:Uploading model into container now
+2024-03-19 12:07:54,956:INFO:_master_model_container: 8
+2024-03-19 12:07:54,956:INFO:_display_container: 2
+2024-03-19 12:07:54,956:INFO:ThetaForecaster()
+2024-03-19 12:07:54,956:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:55,157:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:55,157:INFO:Creating metrics dataframe
+2024-03-19 12:07:55,181:INFO:Initializing Croston
+2024-03-19 12:07:55,181:INFO:Total runtime is 0.5697976549466452 minutes
+2024-03-19 12:07:55,186:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:55,186:INFO:Initializing create_model()
+2024-03-19 12:07:55,186:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=croston, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:55,186:INFO:Checking exceptions
+2024-03-19 12:07:55,186:INFO:Importing libraries
+2024-03-19 12:07:55,186:INFO:Copying training dataset
+2024-03-19 12:07:55,186:INFO:Defining folds
+2024-03-19 12:07:55,186:INFO:Declaring metric variables
+2024-03-19 12:07:55,198:INFO:Importing untrained model
+2024-03-19 12:07:55,200:INFO:Croston Imported successfully
+2024-03-19 12:07:55,214:INFO:Starting cross validation
+2024-03-19 12:07:55,214:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:55,271:INFO:Calculating mean and std
+2024-03-19 12:07:55,271:INFO:Creating metrics dataframe
+2024-03-19 12:07:55,279:INFO:Uploading results into container
+2024-03-19 12:07:55,284:INFO:Uploading model into container now
+2024-03-19 12:07:55,284:INFO:_master_model_container: 9
+2024-03-19 12:07:55,284:INFO:_display_container: 2
+2024-03-19 12:07:55,284:INFO:Croston()
+2024-03-19 12:07:55,284:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:55,459:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:55,459:INFO:Creating metrics dataframe
+2024-03-19 12:07:55,500:INFO:Initializing Linear w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:07:55,500:INFO:Total runtime is 0.5751028498013816 minutes
+2024-03-19 12:07:55,500:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:55,500:INFO:Initializing create_model()
+2024-03-19 12:07:55,500:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=lr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:55,500:INFO:Checking exceptions
+2024-03-19 12:07:55,500:INFO:Importing libraries
+2024-03-19 12:07:55,500:INFO:Copying training dataset
+2024-03-19 12:07:55,515:INFO:Defining folds
+2024-03-19 12:07:55,515:INFO:Declaring metric variables
+2024-03-19 12:07:55,520:INFO:Importing untrained model
+2024-03-19 12:07:55,524:INFO:Linear w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:55,542:INFO:Starting cross validation
+2024-03-19 12:07:55,543:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:56,549:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:56,549:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:56,549:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:56,667:INFO:Calculating mean and std
+2024-03-19 12:07:56,667:INFO:Creating metrics dataframe
+2024-03-19 12:07:56,688:INFO:Uploading results into container
+2024-03-19 12:07:56,688:INFO:Uploading model into container now
+2024-03-19 12:07:56,690:INFO:_master_model_container: 10
+2024-03-19 12:07:56,690:INFO:_display_container: 2
+2024-03-19 12:07:56,704:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LinearRegression(n_jobs=-1), window_length=1)
+2024-03-19 12:07:56,704:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:56,900:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:56,900:INFO:Creating metrics dataframe
+2024-03-19 12:07:56,916:INFO:Initializing Elastic Net w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:07:56,916:INFO:Total runtime is 0.5987156788508099 minutes
+2024-03-19 12:07:56,916:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:56,916:INFO:Initializing create_model()
+2024-03-19 12:07:56,916:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:56,916:INFO:Checking exceptions
+2024-03-19 12:07:56,916:INFO:Importing libraries
+2024-03-19 12:07:56,916:INFO:Copying training dataset
+2024-03-19 12:07:56,932:INFO:Defining folds
+2024-03-19 12:07:56,932:INFO:Declaring metric variables
+2024-03-19 12:07:56,942:INFO:Importing untrained model
+2024-03-19 12:07:56,950:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:56,961:INFO:Starting cross validation
+2024-03-19 12:07:56,967:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:57,444:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:57,444:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:57,459:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:57,590:INFO:Calculating mean and std
+2024-03-19 12:07:57,590:INFO:Creating metrics dataframe
+2024-03-19 12:07:57,590:INFO:Uploading results into container
+2024-03-19 12:07:57,598:INFO:Uploading model into container now
+2024-03-19 12:07:57,598:INFO:_master_model_container: 11
+2024-03-19 12:07:57,598:INFO:_display_container: 2
+2024-03-19 12:07:57,604:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=42), window_length=1)
+2024-03-19 12:07:57,604:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:57,791:WARNING:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=42), window_length=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-03-19 12:07:57,798:WARNING:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:07:57,798:INFO:Initializing create_model()
+2024-03-19 12:07:57,798:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:57,798:INFO:Checking exceptions
+2024-03-19 12:07:57,798:INFO:Importing libraries
+2024-03-19 12:07:57,798:INFO:Copying training dataset
+2024-03-19 12:07:57,807:INFO:Defining folds
+2024-03-19 12:07:57,807:INFO:Declaring metric variables
+2024-03-19 12:07:57,815:INFO:Importing untrained model
+2024-03-19 12:07:57,826:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:57,836:INFO:Starting cross validation
+2024-03-19 12:07:57,836:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:58,297:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:58,322:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:07:58,414:INFO:Calculating mean and std
+2024-03-19 12:07:58,414:INFO:Creating metrics dataframe
+2024-03-19 12:07:58,427:INFO:Uploading results into container
+2024-03-19 12:07:58,427:INFO:Uploading model into container now
+2024-03-19 12:07:58,427:INFO:_master_model_container: 12
+2024-03-19 12:07:58,427:INFO:_display_container: 2
+2024-03-19 12:07:58,433:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=42), window_length=1)
+2024-03-19 12:07:58,433:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:58,635:ERROR:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=42), window_length=1) raised an exception or returned all 0.0:
+2024-03-19 12:07:58,635:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 818, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:07:58,635:INFO:Initializing Ridge w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:07:58,635:INFO:Total runtime is 0.6273611187934877 minutes
+2024-03-19 12:07:58,641:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:58,641:INFO:Initializing create_model()
+2024-03-19 12:07:58,641:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=ridge_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:58,641:INFO:Checking exceptions
+2024-03-19 12:07:58,641:INFO:Importing libraries
+2024-03-19 12:07:58,641:INFO:Copying training dataset
+2024-03-19 12:07:58,651:INFO:Defining folds
+2024-03-19 12:07:58,651:INFO:Declaring metric variables
+2024-03-19 12:07:58,651:INFO:Importing untrained model
+2024-03-19 12:07:58,667:INFO:Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:58,680:INFO:Starting cross validation
+2024-03-19 12:07:58,680:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:58,830:INFO:Calculating mean and std
+2024-03-19 12:07:58,830:INFO:Creating metrics dataframe
+2024-03-19 12:07:58,830:INFO:Uploading results into container
+2024-03-19 12:07:58,830:INFO:Uploading model into container now
+2024-03-19 12:07:58,830:INFO:_master_model_container: 13
+2024-03-19 12:07:58,830:INFO:_display_container: 2
+2024-03-19 12:07:58,843:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=42), window_length=1)
+2024-03-19 12:07:58,843:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:59,052:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:07:59,052:INFO:Creating metrics dataframe
+2024-03-19 12:07:59,068:INFO:Initializing Lasso w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:07:59,068:INFO:Total runtime is 0.6345811486244203 minutes
+2024-03-19 12:07:59,068:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:59,068:INFO:Initializing create_model()
+2024-03-19 12:07:59,084:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:59,084:INFO:Checking exceptions
+2024-03-19 12:07:59,084:INFO:Importing libraries
+2024-03-19 12:07:59,084:INFO:Copying training dataset
+2024-03-19 12:07:59,084:INFO:Defining folds
+2024-03-19 12:07:59,084:INFO:Declaring metric variables
+2024-03-19 12:07:59,084:INFO:Importing untrained model
+2024-03-19 12:07:59,100:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:59,116:INFO:Starting cross validation
+2024-03-19 12:07:59,116:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:59,267:INFO:Calculating mean and std
+2024-03-19 12:07:59,272:INFO:Creating metrics dataframe
+2024-03-19 12:07:59,280:INFO:Uploading results into container
+2024-03-19 12:07:59,280:INFO:Uploading model into container now
+2024-03-19 12:07:59,280:INFO:_master_model_container: 14
+2024-03-19 12:07:59,280:INFO:_display_container: 2
+2024-03-19 12:07:59,283:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=42), window_length=1)
+2024-03-19 12:07:59,283:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:59,480:WARNING:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=42), window_length=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-03-19 12:07:59,480:WARNING:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:07:59,480:INFO:Initializing create_model()
+2024-03-19 12:07:59,480:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:59,480:INFO:Checking exceptions
+2024-03-19 12:07:59,480:INFO:Importing libraries
+2024-03-19 12:07:59,480:INFO:Copying training dataset
+2024-03-19 12:07:59,488:INFO:Defining folds
+2024-03-19 12:07:59,488:INFO:Declaring metric variables
+2024-03-19 12:07:59,497:INFO:Importing untrained model
+2024-03-19 12:07:59,502:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:59,513:INFO:Starting cross validation
+2024-03-19 12:07:59,517:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:07:59,660:INFO:Calculating mean and std
+2024-03-19 12:07:59,660:INFO:Creating metrics dataframe
+2024-03-19 12:07:59,672:INFO:Uploading results into container
+2024-03-19 12:07:59,672:INFO:Uploading model into container now
+2024-03-19 12:07:59,672:INFO:_master_model_container: 15
+2024-03-19 12:07:59,672:INFO:_display_container: 2
+2024-03-19 12:07:59,672:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=42), window_length=1)
+2024-03-19 12:07:59,672:INFO:create_model() successfully completed......................................
+2024-03-19 12:07:59,861:ERROR:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=42), window_length=1) raised an exception or returned all 0.0:
+2024-03-19 12:07:59,861:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 818, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:07:59,861:INFO:Initializing Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:07:59,861:INFO:Total runtime is 0.6477920373280844 minutes
+2024-03-19 12:07:59,877:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:07:59,877:INFO:Initializing create_model()
+2024-03-19 12:07:59,877:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:07:59,877:INFO:Checking exceptions
+2024-03-19 12:07:59,877:INFO:Importing libraries
+2024-03-19 12:07:59,877:INFO:Copying training dataset
+2024-03-19 12:07:59,877:INFO:Defining folds
+2024-03-19 12:07:59,877:INFO:Declaring metric variables
+2024-03-19 12:07:59,877:INFO:Importing untrained model
+2024-03-19 12:07:59,898:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:07:59,908:INFO:Starting cross validation
+2024-03-19 12:07:59,913:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:00,060:INFO:Calculating mean and std
+2024-03-19 12:08:00,060:INFO:Creating metrics dataframe
+2024-03-19 12:08:00,060:INFO:Uploading results into container
+2024-03-19 12:08:00,060:INFO:Uploading model into container now
+2024-03-19 12:08:00,060:INFO:_master_model_container: 16
+2024-03-19 12:08:00,060:INFO:_display_container: 2
+2024-03-19 12:08:00,076:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=42), window_length=1)
+2024-03-19 12:08:00,076:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:00,263:WARNING:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=42), window_length=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-03-19 12:08:00,263:WARNING:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:00,263:INFO:Initializing create_model()
+2024-03-19 12:08:00,263:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:00,263:INFO:Checking exceptions
+2024-03-19 12:08:00,263:INFO:Importing libraries
+2024-03-19 12:08:00,263:INFO:Copying training dataset
+2024-03-19 12:08:00,273:INFO:Defining folds
+2024-03-19 12:08:00,273:INFO:Declaring metric variables
+2024-03-19 12:08:00,282:INFO:Importing untrained model
+2024-03-19 12:08:00,291:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:00,301:INFO:Starting cross validation
+2024-03-19 12:08:00,301:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:00,451:INFO:Calculating mean and std
+2024-03-19 12:08:00,451:INFO:Creating metrics dataframe
+2024-03-19 12:08:00,451:INFO:Uploading results into container
+2024-03-19 12:08:00,451:INFO:Uploading model into container now
+2024-03-19 12:08:00,451:INFO:_master_model_container: 17
+2024-03-19 12:08:00,451:INFO:_display_container: 2
+2024-03-19 12:08:00,469:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=42), window_length=1)
+2024-03-19 12:08:00,471:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:00,670:ERROR:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=42), window_length=1) raised an exception or returned all 0.0:
+2024-03-19 12:08:00,670:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 818, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:00,670:INFO:Initializing Bayesian Ridge w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:00,670:INFO:Total runtime is 0.6612685163815818 minutes
+2024-03-19 12:08:00,685:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:00,685:INFO:Initializing create_model()
+2024-03-19 12:08:00,685:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=br_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:00,685:INFO:Checking exceptions
+2024-03-19 12:08:00,685:INFO:Importing libraries
+2024-03-19 12:08:00,685:INFO:Copying training dataset
+2024-03-19 12:08:00,696:INFO:Defining folds
+2024-03-19 12:08:00,696:INFO:Declaring metric variables
+2024-03-19 12:08:00,704:INFO:Importing untrained model
+2024-03-19 12:08:00,715:INFO:Bayesian Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:00,715:INFO:Starting cross validation
+2024-03-19 12:08:00,715:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:00,903:INFO:Calculating mean and std
+2024-03-19 12:08:00,903:INFO:Creating metrics dataframe
+2024-03-19 12:08:00,914:INFO:Uploading results into container
+2024-03-19 12:08:00,914:INFO:Uploading model into container now
+2024-03-19 12:08:00,914:INFO:_master_model_container: 18
+2024-03-19 12:08:00,914:INFO:_display_container: 2
+2024-03-19 12:08:00,920:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), window_length=1)
+2024-03-19 12:08:00,920:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:01,118:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:01,118:INFO:Creating metrics dataframe
+2024-03-19 12:08:01,127:INFO:Initializing Huber w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:01,127:INFO:Total runtime is 0.6688860654830935 minutes
+2024-03-19 12:08:01,127:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:01,127:INFO:Initializing create_model()
+2024-03-19 12:08:01,127:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=huber_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:01,127:INFO:Checking exceptions
+2024-03-19 12:08:01,127:INFO:Importing libraries
+2024-03-19 12:08:01,127:INFO:Copying training dataset
+2024-03-19 12:08:01,127:INFO:Defining folds
+2024-03-19 12:08:01,127:INFO:Declaring metric variables
+2024-03-19 12:08:01,145:INFO:Importing untrained model
+2024-03-19 12:08:01,150:INFO:Huber w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:01,159:INFO:Starting cross validation
+2024-03-19 12:08:01,159:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:01,326:INFO:Calculating mean and std
+2024-03-19 12:08:01,331:INFO:Creating metrics dataframe
+2024-03-19 12:08:01,334:INFO:Uploading results into container
+2024-03-19 12:08:01,334:INFO:Uploading model into container now
+2024-03-19 12:08:01,334:INFO:_master_model_container: 19
+2024-03-19 12:08:01,334:INFO:_display_container: 2
+2024-03-19 12:08:01,334:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=HuberRegressor(), window_length=1)
+2024-03-19 12:08:01,334:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:01,525:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:01,541:INFO:Creating metrics dataframe
+2024-03-19 12:08:01,557:INFO:Initializing Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:01,557:INFO:Total runtime is 0.6760553479194643 minutes
+2024-03-19 12:08:01,557:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:01,557:INFO:Initializing create_model()
+2024-03-19 12:08:01,557:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=omp_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:01,557:INFO:Checking exceptions
+2024-03-19 12:08:01,557:INFO:Importing libraries
+2024-03-19 12:08:01,557:INFO:Copying training dataset
+2024-03-19 12:08:01,557:INFO:Defining folds
+2024-03-19 12:08:01,573:INFO:Declaring metric variables
+2024-03-19 12:08:01,577:INFO:Importing untrained model
+2024-03-19 12:08:01,581:INFO:Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:01,597:INFO:Starting cross validation
+2024-03-19 12:08:01,600:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:01,745:INFO:Calculating mean and std
+2024-03-19 12:08:01,749:INFO:Creating metrics dataframe
+2024-03-19 12:08:01,754:INFO:Uploading results into container
+2024-03-19 12:08:01,754:INFO:Uploading model into container now
+2024-03-19 12:08:01,754:INFO:_master_model_container: 20
+2024-03-19 12:08:01,754:INFO:_display_container: 2
+2024-03-19 12:08:01,754:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=OrthogonalMatchingPursuit(), window_length=1)
+2024-03-19 12:08:01,754:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:01,960:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:01,960:INFO:Creating metrics dataframe
+2024-03-19 12:08:01,978:INFO:Initializing K Neighbors w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:01,978:INFO:Total runtime is 0.6830709854761762 minutes
+2024-03-19 12:08:01,983:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:01,987:INFO:Initializing create_model()
+2024-03-19 12:08:01,987:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:01,987:INFO:Checking exceptions
+2024-03-19 12:08:01,987:INFO:Importing libraries
+2024-03-19 12:08:01,987:INFO:Copying training dataset
+2024-03-19 12:08:01,987:INFO:Defining folds
+2024-03-19 12:08:01,987:INFO:Declaring metric variables
+2024-03-19 12:08:01,999:INFO:Importing untrained model
+2024-03-19 12:08:01,999:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:02,015:INFO:Starting cross validation
+2024-03-19 12:08:02,015:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:02,730:WARNING:create_model() for knn_cds_dt raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-03-19 12:08:02,730:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\externals\loky\process_executor.py", line 428, in _process_worker
+    r = call_item()
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\externals\loky\process_executor.py", line 275, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\_parallel_backends.py", line 620, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\model_selection.py", line 175, in _fit_and_score
+    y_pred, lower, upper = get_predictions_with_intervals(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\__init__.py", line 110, in get_predictions_with_intervals
+    y_pred = forecaster.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 530, in _predict
+    return self.forecaster_.predict(fh, X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 1048, in _predict
+    y_pred = self.forecaster_.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\models\time_series.py", line 2693, in _predict
+    y = self._forecaster.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 1048, in _predict
+    y_pred = self.forecaster_.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 56, in _predict
+    y_pred = self._predict_boilerplate(fh, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 34, in _predict_boilerplate
+    y_pred = self._predict_fixed_cutoff(fh.to_out_of_sample(cutoff), **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 81, in _predict_fixed_cutoff
+    y_pred = self._predict_last_window(fh, X=X, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_reduce.py", line 1010, in _predict_last_window
+    y_pred_vector = self.estimator_.predict(X_last)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\neighbors\_base.py", line 835, in kneighbors
+    raise ValueError(
+ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_samples_fit = 2, n_samples = 1
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\time_series\forecasting\oop.py", line 2644, in _create_model_with_cv
+    scores, cutoffs = cross_validate(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\model_selection.py", line 306, in cross_validate
+    out = parallel(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 1098, in __call__
+    self.retrieve()
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 975, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\_parallel_backends.py", line 567, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 458, in result
+    return self.__get_result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_samples_fit = 2, n_samples = 1
+
+2024-03-19 12:08:02,744:INFO:Initializing create_model()
+2024-03-19 12:08:02,744:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:02,744:INFO:Checking exceptions
+2024-03-19 12:08:02,744:INFO:Importing libraries
+2024-03-19 12:08:02,744:INFO:Copying training dataset
+2024-03-19 12:08:02,750:INFO:Defining folds
+2024-03-19 12:08:02,750:INFO:Declaring metric variables
+2024-03-19 12:08:02,757:INFO:Importing untrained model
+2024-03-19 12:08:02,765:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:02,780:INFO:Starting cross validation
+2024-03-19 12:08:02,781:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:09,808:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:09,824:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:09,824:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:10,228:ERROR:create_model() for knn_cds_dt raised an exception or returned all 0.0:
+2024-03-19 12:08:10,231:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\externals\loky\process_executor.py", line 428, in _process_worker
+    r = call_item()
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\externals\loky\process_executor.py", line 275, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\_parallel_backends.py", line 620, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\model_selection.py", line 175, in _fit_and_score
+    y_pred, lower, upper = get_predictions_with_intervals(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\__init__.py", line 110, in get_predictions_with_intervals
+    y_pred = forecaster.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 530, in _predict
+    return self.forecaster_.predict(fh, X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 1048, in _predict
+    y_pred = self.forecaster_.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\models\time_series.py", line 2693, in _predict
+    y = self._forecaster.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_pipeline.py", line 1048, in _predict
+    y_pred = self.forecaster_.predict(fh=fh, X=X)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_base.py", line 444, in predict
+    y_pred = self._predict(fh=fh, X=X_inner)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 56, in _predict
+    y_pred = self._predict_boilerplate(fh, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 34, in _predict_boilerplate
+    y_pred = self._predict_fixed_cutoff(fh.to_out_of_sample(cutoff), **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\base\_sktime.py", line 81, in _predict_fixed_cutoff
+    y_pred = self._predict_last_window(fh, X=X, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\forecasting\compose\_reduce.py", line 1010, in _predict_last_window
+    y_pred_vector = self.estimator_.predict(X_last)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\neighbors\_base.py", line 835, in kneighbors
+    raise ValueError(
+ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_samples_fit = 2, n_samples = 1
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\time_series\forecasting\oop.py", line 2644, in _create_model_with_cv
+    scores, cutoffs = cross_validate(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\time_series\forecasting\model_selection.py", line 306, in cross_validate
+    out = parallel(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 1098, in __call__
+    self.retrieve()
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\parallel.py", line 975, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\joblib\_parallel_backends.py", line 567, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 458, in result
+    return self.__get_result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_samples_fit = 2, n_samples = 1
+
+2024-03-19 12:08:10,231:INFO:Initializing Decision Tree w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:10,231:INFO:Total runtime is 0.8206261674563092 minutes
+2024-03-19 12:08:10,231:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:10,231:INFO:Initializing create_model()
+2024-03-19 12:08:10,236:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=dt_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:10,236:INFO:Checking exceptions
+2024-03-19 12:08:10,236:INFO:Importing libraries
+2024-03-19 12:08:10,236:INFO:Copying training dataset
+2024-03-19 12:08:10,243:INFO:Defining folds
+2024-03-19 12:08:10,243:INFO:Declaring metric variables
+2024-03-19 12:08:10,250:INFO:Importing untrained model
+2024-03-19 12:08:10,257:INFO:Decision Tree w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:10,270:INFO:Starting cross validation
+2024-03-19 12:08:10,270:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:16,582:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:16,598:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:16,650:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:16,826:INFO:Calculating mean and std
+2024-03-19 12:08:16,830:INFO:Creating metrics dataframe
+2024-03-19 12:08:16,831:INFO:Uploading results into container
+2024-03-19 12:08:16,831:INFO:Uploading model into container now
+2024-03-19 12:08:16,831:INFO:_master_model_container: 21
+2024-03-19 12:08:16,831:INFO:_display_container: 2
+2024-03-19 12:08:16,844:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=42),
+                    window_length=1)
+2024-03-19 12:08:16,844:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:17,063:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:17,063:INFO:Creating metrics dataframe
+2024-03-19 12:08:17,071:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:17,071:INFO:Total runtime is 0.9346240957578026 minutes
+2024-03-19 12:08:17,087:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:17,087:INFO:Initializing create_model()
+2024-03-19 12:08:17,087:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:17,087:INFO:Checking exceptions
+2024-03-19 12:08:17,087:INFO:Importing libraries
+2024-03-19 12:08:17,087:INFO:Copying training dataset
+2024-03-19 12:08:17,087:INFO:Defining folds
+2024-03-19 12:08:17,087:INFO:Declaring metric variables
+2024-03-19 12:08:17,087:INFO:Importing untrained model
+2024-03-19 12:08:17,101:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:17,113:INFO:Starting cross validation
+2024-03-19 12:08:17,117:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:22,475:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:22,491:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:22,507:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:22,806:INFO:Calculating mean and std
+2024-03-19 12:08:22,806:INFO:Creating metrics dataframe
+2024-03-19 12:08:22,830:INFO:Uploading results into container
+2024-03-19 12:08:22,830:INFO:Uploading model into container now
+2024-03-19 12:08:22,830:INFO:_master_model_container: 22
+2024-03-19 12:08:22,830:INFO:_display_container: 2
+2024-03-19 12:08:22,830:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=RandomForestRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-19 12:08:22,830:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:23,124:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:23,124:INFO:Creating metrics dataframe
+2024-03-19 12:08:23,139:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:23,139:INFO:Total runtime is 1.0357625921567284 minutes
+2024-03-19 12:08:23,158:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:23,158:INFO:Initializing create_model()
+2024-03-19 12:08:23,158:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:23,161:INFO:Checking exceptions
+2024-03-19 12:08:23,161:INFO:Importing libraries
+2024-03-19 12:08:23,161:INFO:Copying training dataset
+2024-03-19 12:08:23,164:INFO:Defining folds
+2024-03-19 12:08:23,164:INFO:Declaring metric variables
+2024-03-19 12:08:23,170:INFO:Importing untrained model
+2024-03-19 12:08:23,176:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:23,180:INFO:Starting cross validation
+2024-03-19 12:08:23,187:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:28,019:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:28,035:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-19 12:08:28,242:INFO:Calculating mean and std
+2024-03-19 12:08:28,242:INFO:Creating metrics dataframe
+2024-03-19 12:08:28,262:INFO:Uploading results into container
+2024-03-19 12:08:28,262:INFO:Uploading model into container now
+2024-03-19 12:08:28,262:INFO:_master_model_container: 23
+2024-03-19 12:08:28,262:INFO:_display_container: 2
+2024-03-19 12:08:28,262:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-19 12:08:28,262:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:28,484:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:28,484:INFO:Creating metrics dataframe
+2024-03-19 12:08:28,508:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:28,508:INFO:Total runtime is 1.1252339522043866 minutes
+2024-03-19 12:08:28,520:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:28,520:INFO:Initializing create_model()
+2024-03-19 12:08:28,520:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:28,520:INFO:Checking exceptions
+2024-03-19 12:08:28,520:INFO:Importing libraries
+2024-03-19 12:08:28,520:INFO:Copying training dataset
+2024-03-19 12:08:28,527:INFO:Defining folds
+2024-03-19 12:08:28,527:INFO:Declaring metric variables
+2024-03-19 12:08:28,532:INFO:Importing untrained model
+2024-03-19 12:08:28,536:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:28,548:INFO:Starting cross validation
+2024-03-19 12:08:28,553:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:28,755:INFO:Calculating mean and std
+2024-03-19 12:08:28,755:INFO:Creating metrics dataframe
+2024-03-19 12:08:28,763:INFO:Uploading results into container
+2024-03-19 12:08:28,763:INFO:Uploading model into container now
+2024-03-19 12:08:28,763:INFO:_master_model_container: 24
+2024-03-19 12:08:28,763:INFO:_display_container: 2
+2024-03-19 12:08:28,768:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=GradientBoostingRegressor(random_state=42),
+                    window_length=1)
+2024-03-19 12:08:28,768:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:28,954:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:28,954:INFO:Creating metrics dataframe
+2024-03-19 12:08:28,970:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:28,970:INFO:Total runtime is 1.1329390406608584 minutes
+2024-03-19 12:08:28,970:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:28,970:INFO:Initializing create_model()
+2024-03-19 12:08:28,970:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:28,970:INFO:Checking exceptions
+2024-03-19 12:08:28,970:INFO:Importing libraries
+2024-03-19 12:08:28,970:INFO:Copying training dataset
+2024-03-19 12:08:28,987:INFO:Defining folds
+2024-03-19 12:08:28,987:INFO:Declaring metric variables
+2024-03-19 12:08:28,992:INFO:Importing untrained model
+2024-03-19 12:08:28,994:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:29,004:INFO:Starting cross validation
+2024-03-19 12:08:29,012:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:29,158:INFO:Calculating mean and std
+2024-03-19 12:08:29,158:INFO:Creating metrics dataframe
+2024-03-19 12:08:29,177:INFO:Uploading results into container
+2024-03-19 12:08:29,177:INFO:Uploading model into container now
+2024-03-19 12:08:29,177:INFO:_master_model_container: 25
+2024-03-19 12:08:29,177:INFO:_display_container: 2
+2024-03-19 12:08:29,177:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=42),
+                    window_length=1)
+2024-03-19 12:08:29,177:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:29,359:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:29,359:INFO:Creating metrics dataframe
+2024-03-19 12:08:29,391:INFO:Initializing Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:29,391:INFO:Total runtime is 1.1399592876434328 minutes
+2024-03-19 12:08:29,391:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:29,391:INFO:Initializing create_model()
+2024-03-19 12:08:29,391:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=xgboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:29,391:INFO:Checking exceptions
+2024-03-19 12:08:29,391:INFO:Importing libraries
+2024-03-19 12:08:29,391:INFO:Copying training dataset
+2024-03-19 12:08:29,407:INFO:Defining folds
+2024-03-19 12:08:29,407:INFO:Declaring metric variables
+2024-03-19 12:08:29,407:INFO:Importing untrained model
+2024-03-19 12:08:29,422:INFO:Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:29,435:INFO:Starting cross validation
+2024-03-19 12:08:29,438:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:30,440:INFO:Calculating mean and std
+2024-03-19 12:08:30,440:INFO:Creating metrics dataframe
+2024-03-19 12:08:30,440:INFO:Uploading results into container
+2024-03-19 12:08:30,440:INFO:Uploading model into container now
+2024-03-19 12:08:30,440:INFO:_master_model_container: 26
+2024-03-19 12:08:30,440:INFO:_display_container: 2
+2024-03-19 12:08:30,455:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=42, ...),
+                    window_length=1)
+2024-03-19 12:08:30,455:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:30,651:INFO:SubProcess create_model() end ==================================
+2024-03-19 12:08:30,651:INFO:Creating metrics dataframe
+2024-03-19 12:08:30,673:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-19 12:08:30,673:INFO:Total runtime is 1.1613169829050702 minutes
+2024-03-19 12:08:30,673:INFO:SubProcess create_model() called ==================================
+2024-03-19 12:08:30,673:INFO:Initializing create_model()
+2024-03-19 12:08:30,673:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:30,673:INFO:Checking exceptions
+2024-03-19 12:08:30,673:INFO:Importing libraries
+2024-03-19 12:08:30,673:INFO:Copying training dataset
+2024-03-19 12:08:30,689:INFO:Defining folds
+2024-03-19 12:08:30,689:INFO:Declaring metric variables
+2024-03-19 12:08:30,693:INFO:Importing untrained model
+2024-03-19 12:08:30,701:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:30,720:INFO:Starting cross validation
+2024-03-19 12:08:30,720:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:31,052:INFO:Calculating mean and std
+2024-03-19 12:08:31,052:INFO:Creating metrics dataframe
+2024-03-19 12:08:31,057:INFO:Uploading results into container
+2024-03-19 12:08:31,057:INFO:Uploading model into container now
+2024-03-19 12:08:31,057:INFO:_master_model_container: 27
+2024-03-19 12:08:31,057:INFO:_display_container: 2
+2024-03-19 12:08:31,057:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-19 12:08:31,057:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:31,282:WARNING:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=42),
+                    window_length=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-03-19 12:08:31,282:WARNING:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:31,282:INFO:Initializing create_model()
+2024-03-19 12:08:31,282:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FC446530A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:31,282:INFO:Checking exceptions
+2024-03-19 12:08:31,282:INFO:Importing libraries
+2024-03-19 12:08:31,282:INFO:Copying training dataset
+2024-03-19 12:08:31,282:INFO:Defining folds
+2024-03-19 12:08:31,282:INFO:Declaring metric variables
+2024-03-19 12:08:31,282:INFO:Importing untrained model
+2024-03-19 12:08:31,300:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-19 12:08:31,300:INFO:Starting cross validation
+2024-03-19 12:08:31,314:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:08:31,586:INFO:Calculating mean and std
+2024-03-19 12:08:31,586:INFO:Creating metrics dataframe
+2024-03-19 12:08:31,586:INFO:Uploading results into container
+2024-03-19 12:08:31,586:INFO:Uploading model into container now
+2024-03-19 12:08:31,586:INFO:_master_model_container: 28
+2024-03-19 12:08:31,586:INFO:_display_container: 2
+2024-03-19 12:08:31,602:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-19 12:08:31,602:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:31,822:ERROR:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=42),
+                    window_length=1) raised an exception or returned all 0.0:
+2024-03-19 12:08:31,822:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 818, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:31,838:INFO:Initializing create_model()
+2024-03-19 12:08:31,838:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=ThetaForecaster(), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:31,838:INFO:Checking exceptions
+2024-03-19 12:08:31,838:INFO:Importing libraries
+2024-03-19 12:08:31,838:INFO:Copying training dataset
+2024-03-19 12:08:31,851:INFO:Defining folds
+2024-03-19 12:08:31,851:INFO:Declaring metric variables
+2024-03-19 12:08:31,851:INFO:Importing untrained model
+2024-03-19 12:08:31,851:INFO:Declaring custom model
+2024-03-19 12:08:31,851:INFO:Theta Forecaster Imported successfully
+2024-03-19 12:08:31,851:INFO:Cross validation set to False
+2024-03-19 12:08:31,851:INFO:Fitting Model
+2024-03-19 12:08:31,883:INFO:ThetaForecaster()
+2024-03-19 12:08:31,883:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:32,087:ERROR:create_model() for ThetaForecaster() raised an exception or returned all 0.0:
+2024-03-19 12:08:32,088:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 954, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:32,095:INFO:Initializing create_model()
+2024-03-19 12:08:32,095:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=42), window_length=1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:32,095:INFO:Checking exceptions
+2024-03-19 12:08:32,110:INFO:Importing libraries
+2024-03-19 12:08:32,110:INFO:Copying training dataset
+2024-03-19 12:08:32,110:INFO:Defining folds
+2024-03-19 12:08:32,110:INFO:Declaring metric variables
+2024-03-19 12:08:32,110:INFO:Importing untrained model
+2024-03-19 12:08:32,110:INFO:Declaring custom model
+2024-03-19 12:08:32,110:INFO:Ridge Imported successfully
+2024-03-19 12:08:32,110:INFO:Cross validation set to False
+2024-03-19 12:08:32,110:INFO:Fitting Model
+2024-03-19 12:08:32,206:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=42), window_length=1)
+2024-03-19 12:08:32,206:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:32,420:ERROR:create_model() for BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=42), window_length=1) raised an exception or returned all 0.0:
+2024-03-19 12:08:32,420:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 954, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:32,420:INFO:Initializing create_model()
+2024-03-19 12:08:32,420:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=ExponentialSmoothing(sp=1, trend='add'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:32,420:INFO:Checking exceptions
+2024-03-19 12:08:32,420:INFO:Importing libraries
+2024-03-19 12:08:32,420:INFO:Copying training dataset
+2024-03-19 12:08:32,436:INFO:Defining folds
+2024-03-19 12:08:32,436:INFO:Declaring metric variables
+2024-03-19 12:08:32,436:INFO:Importing untrained model
+2024-03-19 12:08:32,436:INFO:Declaring custom model
+2024-03-19 12:08:32,436:INFO:Exponential Smoothing Imported successfully
+2024-03-19 12:08:32,436:INFO:Cross validation set to False
+2024-03-19 12:08:32,436:INFO:Fitting Model
+2024-03-19 12:08:32,472:INFO:ExponentialSmoothing(sp=1, trend='add')
+2024-03-19 12:08:32,472:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:32,664:ERROR:create_model() for ExponentialSmoothing(sp=1, trend='add') raised an exception or returned all 0.0:
+2024-03-19 12:08:32,664:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 954, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:32,680:INFO:Initializing create_model()
+2024-03-19 12:08:32,680:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=PolynomialTrendForecaster(), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:08:32,680:INFO:Checking exceptions
+2024-03-19 12:08:32,687:INFO:Importing libraries
+2024-03-19 12:08:32,687:INFO:Copying training dataset
+2024-03-19 12:08:32,687:INFO:Defining folds
+2024-03-19 12:08:32,687:INFO:Declaring metric variables
+2024-03-19 12:08:32,687:INFO:Importing untrained model
+2024-03-19 12:08:32,687:INFO:Declaring custom model
+2024-03-19 12:08:32,687:INFO:Polynomial Trend Forecaster Imported successfully
+2024-03-19 12:08:32,687:INFO:Cross validation set to False
+2024-03-19 12:08:32,687:INFO:Fitting Model
+2024-03-19 12:08:32,695:INFO:PolynomialTrendForecaster()
+2024-03-19 12:08:32,695:INFO:create_model() successfully completed......................................
+2024-03-19 12:08:32,895:ERROR:create_model() for PolynomialTrendForecaster() raised an exception or returned all 0.0:
+2024-03-19 12:08:32,895:ERROR:Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 954, in compare_models
+    np.sum(
+AssertionError
+
+2024-03-19 12:08:32,950:INFO:_master_model_container: 28
+2024-03-19 12:08:32,950:INFO:_display_container: 2
+2024-03-19 12:08:32,950:INFO:[ThetaForecaster(), BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=42), window_length=1), ExponentialSmoothing(sp=1, trend='add'), PolynomialTrendForecaster()]
+2024-03-19 12:08:32,950:INFO:compare_models() successfully completed......................................
+2024-03-19 12:11:02,090:INFO:Visual Rendered Successfully
+2024-03-19 12:14:49,680:INFO:Initializing create_model()
+2024-03-19 12:14:49,680:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:14:49,680:INFO:Checking exceptions
+2024-03-19 12:14:49,741:INFO:Importing libraries
+2024-03-19 12:14:49,741:INFO:Copying training dataset
+2024-03-19 12:14:49,753:INFO:Defining folds
+2024-03-19 12:14:49,753:INFO:Declaring metric variables
+2024-03-19 12:14:49,754:INFO:Importing untrained model
+2024-03-19 12:14:49,771:INFO:ARIMA Imported successfully
+2024-03-19 12:14:49,787:INFO:Starting cross validation
+2024-03-19 12:14:49,787:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:14:57,424:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning: Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+  warn('Non-stationary starting autoregressive parameters'
+
+2024-03-19 12:14:57,510:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:14:57,529:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:14:57,646:INFO:Calculating mean and std
+2024-03-19 12:14:57,646:INFO:Creating metrics dataframe
+2024-03-19 12:14:57,679:INFO:Finalizing model
+2024-03-19 12:14:57,730:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning:
+
+Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+
+
+2024-03-19 12:14:57,856:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning:
+
+Maximum Likelihood optimization failed to converge. Check mle_retvals
+
+
+2024-03-19 12:14:57,883:INFO:Uploading results into container
+2024-03-19 12:14:57,883:INFO:Uploading model into container now
+2024-03-19 12:14:57,911:INFO:_master_model_container: 29
+2024-03-19 12:14:57,911:INFO:_display_container: 3
+2024-03-19 12:14:57,911:INFO:ARIMA()
+2024-03-19 12:14:57,911:INFO:create_model() successfully completed......................................
+2024-03-19 12:14:58,479:INFO:Visual Rendered Successfully
+2024-03-19 12:14:58,605:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: mase() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 175, in mase
+    return mean_absolute_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 421, in mean_absolute_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: rmsse() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 185, in rmsse
+    return mean_squared_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 684, in mean_squared_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,611:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 2]
+
+
+
+2024-03-19 12:14:58,622:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2024-03-19 12:14:59,058:INFO:Visual Rendered Successfully
+2024-03-19 12:15:08,507:INFO:Initializing create_model()
+2024-03-19 12:15:08,507:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:15:08,507:INFO:Checking exceptions
+2024-03-19 12:15:08,542:INFO:Importing libraries
+2024-03-19 12:15:08,542:INFO:Copying training dataset
+2024-03-19 12:15:08,550:INFO:Defining folds
+2024-03-19 12:15:08,550:INFO:Declaring metric variables
+2024-03-19 12:15:08,558:INFO:Importing untrained model
+2024-03-19 12:15:08,560:INFO:ARIMA Imported successfully
+2024-03-19 12:15:08,581:INFO:Starting cross validation
+2024-03-19 12:15:08,581:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:15:14,125:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning: Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+  warn('Non-stationary starting autoregressive parameters'
+
+2024-03-19 12:15:14,142:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:15:14,241:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:15:14,325:INFO:Calculating mean and std
+2024-03-19 12:15:14,325:INFO:Creating metrics dataframe
+2024-03-19 12:15:14,343:INFO:Finalizing model
+2024-03-19 12:15:14,365:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning:
+
+Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+
+
+2024-03-19 12:15:14,464:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning:
+
+Maximum Likelihood optimization failed to converge. Check mle_retvals
+
+
+2024-03-19 12:15:14,474:INFO:Uploading results into container
+2024-03-19 12:15:14,474:INFO:Uploading model into container now
+2024-03-19 12:15:14,490:INFO:_master_model_container: 30
+2024-03-19 12:15:14,490:INFO:_display_container: 5
+2024-03-19 12:15:14,490:INFO:ARIMA()
+2024-03-19 12:15:14,490:INFO:create_model() successfully completed......................................
+2024-03-19 12:15:14,773:INFO:Visual Rendered Successfully
+2024-03-19 12:15:14,896:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: mase() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 175, in mase
+    return mean_absolute_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 421, in mean_absolute_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,896:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: rmsse() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 185, in rmsse
+    return mean_squared_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 684, in mean_squared_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,904:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,904:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2024-03-19 12:15:14,907:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,907:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,907:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:15:14,912:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2024-03-19 12:15:15,163:INFO:Visual Rendered Successfully
+2024-03-19 12:17:00,947:INFO:Initializing create_model()
+2024-03-19 12:17:00,947:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:17:00,947:INFO:Checking exceptions
+2024-03-19 12:17:00,991:INFO:Importing libraries
+2024-03-19 12:17:00,991:INFO:Copying training dataset
+2024-03-19 12:17:00,997:INFO:Defining folds
+2024-03-19 12:17:00,997:INFO:Declaring metric variables
+2024-03-19 12:17:01,001:INFO:Importing untrained model
+2024-03-19 12:17:01,006:INFO:ARIMA Imported successfully
+2024-03-19 12:17:01,025:INFO:Starting cross validation
+2024-03-19 12:17:01,025:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:17:01,114:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning: Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+  warn('Non-stationary starting autoregressive parameters'
+
+2024-03-19 12:17:01,229:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:17:06,568:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+2024-03-19 12:17:06,641:INFO:Calculating mean and std
+2024-03-19 12:17:06,641:INFO:Creating metrics dataframe
+2024-03-19 12:17:06,657:INFO:Finalizing model
+2024-03-19 12:17:06,673:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\tsa\statespace\sarimax.py:966: UserWarning:
+
+Non-stationary starting autoregressive parameters found. Using zeros as starting parameters.
+
+
+2024-03-19 12:17:06,762:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\statsmodels\base\model.py:607: ConvergenceWarning:
+
+Maximum Likelihood optimization failed to converge. Check mle_retvals
+
+
+2024-03-19 12:17:06,779:INFO:Uploading results into container
+2024-03-19 12:17:06,779:INFO:Uploading model into container now
+2024-03-19 12:17:06,795:INFO:_master_model_container: 31
+2024-03-19 12:17:06,795:INFO:_display_container: 7
+2024-03-19 12:17:06,795:INFO:ARIMA()
+2024-03-19 12:17:06,795:INFO:create_model() successfully completed......................................
+2024-03-19 12:17:07,152:INFO:Visual Rendered Successfully
+2024-03-19 12:17:07,285:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: mase() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 175, in mase
+    return mean_absolute_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 421, in mean_absolute_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,292:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: rmsse() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 185, in rmsse
+    return mean_squared_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 684, in mean_squared_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,302:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,302:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2024-03-19 12:17:07,302:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,308:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,308:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 12]
+
+
+
+2024-03-19 12:17:07,308:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2024-03-19 12:17:07,552:INFO:Visual Rendered Successfully
+2024-03-19 12:18:49,923:INFO:Initializing create_model()
+2024-03-19 12:18:49,923:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001FC44449840>, estimator=theta, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-19 12:18:49,923:INFO:Checking exceptions
+2024-03-19 12:18:49,954:INFO:Importing libraries
+2024-03-19 12:18:49,954:INFO:Copying training dataset
+2024-03-19 12:18:49,966:INFO:Defining folds
+2024-03-19 12:18:49,966:INFO:Declaring metric variables
+2024-03-19 12:18:49,972:INFO:Importing untrained model
+2024-03-19 12:18:49,980:INFO:Theta Forecaster Imported successfully
+2024-03-19 12:18:49,997:INFO:Starting cross validation
+2024-03-19 12:18:49,997:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-19 12:18:50,430:INFO:Calculating mean and std
+2024-03-19 12:18:50,430:INFO:Creating metrics dataframe
+2024-03-19 12:18:50,430:INFO:Finalizing model
+2024-03-19 12:18:50,470:INFO:Uploading results into container
+2024-03-19 12:18:50,470:INFO:Uploading model into container now
+2024-03-19 12:18:50,484:INFO:_master_model_container: 32
+2024-03-19 12:18:50,484:INFO:_display_container: 9
+2024-03-19 12:18:50,484:INFO:ThetaForecaster()
+2024-03-19 12:18:50,484:INFO:create_model() successfully completed......................................
+2024-03-19 12:18:50,778:INFO:Visual Rendered Successfully
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: mase() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 175, in mase
+    return mean_absolute_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 421, in mean_absolute_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: rmsse() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 185, in rmsse
+    return mean_squared_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 684, in mean_squared_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,845:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
+
+
+
+2024-03-19 12:18:50,856:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2024-03-19 12:18:51,166:INFO:Visual Rendered Successfully
