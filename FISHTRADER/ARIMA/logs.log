@@ -5054,3 +5054,7 @@ ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
 
 2024-03-19 12:23:09,365:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
 2024-03-19 12:23:09,556:INFO:Visual Rendered Successfully
+2024-03-20 10:20:01,448:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-20 10:24:50,625:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
