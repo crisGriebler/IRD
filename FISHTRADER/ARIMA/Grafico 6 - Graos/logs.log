@@ -1823,3 +1823,303 @@ ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_sample
 2024-03-22 14:46:46,575:INFO:Starting cross validation
 2024-03-22 14:46:46,575:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
                         initial_window=3), n_jobs=-1
+2024-03-22 14:46:54,200:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:46:54,222:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:46:54,222:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:46:54,365:INFO:Calculating mean and std
+2024-03-22 14:46:54,365:INFO:Creating metrics dataframe
+2024-03-22 14:46:54,394:INFO:Uploading results into container
+2024-03-22 14:46:54,394:INFO:Uploading model into container now
+2024-03-22 14:46:54,394:INFO:_master_model_container: 18
+2024-03-22 14:46:54,394:INFO:_display_container: 2
+2024-03-22 14:46:54,394:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=42),
+                    window_length=1)
+2024-03-22 14:46:54,394:INFO:create_model() successfully completed......................................
+2024-03-22 14:46:54,615:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:46:54,615:INFO:Creating metrics dataframe
+2024-03-22 14:46:54,654:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:46:54,654:INFO:Total runtime is 0.8014043688774108 minutes
+2024-03-22 14:46:54,670:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:46:54,670:INFO:Initializing create_model()
+2024-03-22 14:46:54,670:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:46:54,670:INFO:Checking exceptions
+2024-03-22 14:46:54,670:INFO:Importing libraries
+2024-03-22 14:46:54,670:INFO:Copying training dataset
+2024-03-22 14:46:54,684:INFO:Defining folds
+2024-03-22 14:46:54,684:INFO:Declaring metric variables
+2024-03-22 14:46:54,700:INFO:Importing untrained model
+2024-03-22 14:46:54,704:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:46:54,721:INFO:Starting cross validation
+2024-03-22 14:46:54,721:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:01,149:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:47:01,149:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:47:01,166:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:47:01,514:INFO:Calculating mean and std
+2024-03-22 14:47:01,514:INFO:Creating metrics dataframe
+2024-03-22 14:47:01,540:INFO:Uploading results into container
+2024-03-22 14:47:01,540:INFO:Uploading model into container now
+2024-03-22 14:47:01,540:INFO:_master_model_container: 19
+2024-03-22 14:47:01,540:INFO:_display_container: 2
+2024-03-22 14:47:01,544:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=RandomForestRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-22 14:47:01,547:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:01,783:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:01,783:INFO:Creating metrics dataframe
+2024-03-22 14:47:01,798:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:47:01,798:INFO:Total runtime is 0.920465318361918 minutes
+2024-03-22 14:47:01,798:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:47:01,813:INFO:Initializing create_model()
+2024-03-22 14:47:01,813:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:01,813:INFO:Checking exceptions
+2024-03-22 14:47:01,813:INFO:Importing libraries
+2024-03-22 14:47:01,813:INFO:Copying training dataset
+2024-03-22 14:47:01,813:INFO:Defining folds
+2024-03-22 14:47:01,813:INFO:Declaring metric variables
+2024-03-22 14:47:01,829:INFO:Importing untrained model
+2024-03-22 14:47:01,831:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:47:01,843:INFO:Starting cross validation
+2024-03-22 14:47:01,846:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:07,807:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:47:07,839:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2024-03-22 14:47:08,139:INFO:Calculating mean and std
+2024-03-22 14:47:08,139:INFO:Creating metrics dataframe
+2024-03-22 14:47:08,156:INFO:Uploading results into container
+2024-03-22 14:47:08,156:INFO:Uploading model into container now
+2024-03-22 14:47:08,156:INFO:_master_model_container: 20
+2024-03-22 14:47:08,156:INFO:_display_container: 2
+2024-03-22 14:47:08,163:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-22 14:47:08,163:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:08,380:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:08,380:INFO:Creating metrics dataframe
+2024-03-22 14:47:08,396:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:47:08,396:INFO:Total runtime is 1.0304392178853352 minutes
+2024-03-22 14:47:08,396:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:47:08,396:INFO:Initializing create_model()
+2024-03-22 14:47:08,396:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:08,396:INFO:Checking exceptions
+2024-03-22 14:47:08,396:INFO:Importing libraries
+2024-03-22 14:47:08,396:INFO:Copying training dataset
+2024-03-22 14:47:08,411:INFO:Defining folds
+2024-03-22 14:47:08,411:INFO:Declaring metric variables
+2024-03-22 14:47:08,415:INFO:Importing untrained model
+2024-03-22 14:47:08,420:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:47:08,444:INFO:Starting cross validation
+2024-03-22 14:47:08,447:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:08,755:INFO:Calculating mean and std
+2024-03-22 14:47:08,755:INFO:Creating metrics dataframe
+2024-03-22 14:47:08,769:INFO:Uploading results into container
+2024-03-22 14:47:08,769:INFO:Uploading model into container now
+2024-03-22 14:47:08,769:INFO:_master_model_container: 21
+2024-03-22 14:47:08,769:INFO:_display_container: 2
+2024-03-22 14:47:08,773:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=GradientBoostingRegressor(random_state=42),
+                    window_length=1)
+2024-03-22 14:47:08,773:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:08,977:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:08,977:INFO:Creating metrics dataframe
+2024-03-22 14:47:09,021:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:47:09,021:INFO:Total runtime is 1.0408589641253152 minutes
+2024-03-22 14:47:09,038:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:47:09,038:INFO:Initializing create_model()
+2024-03-22 14:47:09,038:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:09,038:INFO:Checking exceptions
+2024-03-22 14:47:09,038:INFO:Importing libraries
+2024-03-22 14:47:09,038:INFO:Copying training dataset
+2024-03-22 14:47:09,050:INFO:Defining folds
+2024-03-22 14:47:09,050:INFO:Declaring metric variables
+2024-03-22 14:47:09,057:INFO:Importing untrained model
+2024-03-22 14:47:09,074:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:47:09,090:INFO:Starting cross validation
+2024-03-22 14:47:09,098:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:09,294:INFO:Calculating mean and std
+2024-03-22 14:47:09,294:INFO:Creating metrics dataframe
+2024-03-22 14:47:09,303:INFO:Uploading results into container
+2024-03-22 14:47:09,303:INFO:Uploading model into container now
+2024-03-22 14:47:09,303:INFO:_master_model_container: 22
+2024-03-22 14:47:09,303:INFO:_display_container: 2
+2024-03-22 14:47:09,310:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=42),
+                    window_length=1)
+2024-03-22 14:47:09,310:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:09,504:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:09,504:INFO:Creating metrics dataframe
+2024-03-22 14:47:09,537:INFO:Initializing Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:47:09,537:INFO:Total runtime is 1.049459393819173 minutes
+2024-03-22 14:47:09,554:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:47:09,554:INFO:Initializing create_model()
+2024-03-22 14:47:09,554:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=xgboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:09,554:INFO:Checking exceptions
+2024-03-22 14:47:09,554:INFO:Importing libraries
+2024-03-22 14:47:09,554:INFO:Copying training dataset
+2024-03-22 14:47:09,554:INFO:Defining folds
+2024-03-22 14:47:09,554:INFO:Declaring metric variables
+2024-03-22 14:47:09,554:INFO:Importing untrained model
+2024-03-22 14:47:09,569:INFO:Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:47:09,583:INFO:Starting cross validation
+2024-03-22 14:47:09,591:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:11,175:INFO:Calculating mean and std
+2024-03-22 14:47:11,186:INFO:Creating metrics dataframe
+2024-03-22 14:47:11,198:INFO:Uploading results into container
+2024-03-22 14:47:11,200:INFO:Uploading model into container now
+2024-03-22 14:47:11,200:INFO:_master_model_container: 23
+2024-03-22 14:47:11,202:INFO:_display_container: 2
+2024-03-22 14:47:11,210:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=42, ...),
+                    window_length=1)
+2024-03-22 14:47:11,210:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:11,434:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:11,434:INFO:Creating metrics dataframe
+2024-03-22 14:47:11,455:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2024-03-22 14:47:11,455:INFO:Total runtime is 1.0814235806465147 minutes
+2024-03-22 14:47:11,455:INFO:SubProcess create_model() called ==================================
+2024-03-22 14:47:11,455:INFO:Initializing create_model()
+2024-03-22 14:47:11,455:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000206078A7FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:11,455:INFO:Checking exceptions
+2024-03-22 14:47:11,455:INFO:Importing libraries
+2024-03-22 14:47:11,455:INFO:Copying training dataset
+2024-03-22 14:47:11,466:INFO:Defining folds
+2024-03-22 14:47:11,466:INFO:Declaring metric variables
+2024-03-22 14:47:11,474:INFO:Importing untrained model
+2024-03-22 14:47:11,477:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:47:11,492:INFO:Starting cross validation
+2024-03-22 14:47:11,492:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:47:12,125:INFO:Calculating mean and std
+2024-03-22 14:47:12,144:INFO:Creating metrics dataframe
+2024-03-22 14:47:12,156:INFO:Uploading results into container
+2024-03-22 14:47:12,156:INFO:Uploading model into container now
+2024-03-22 14:47:12,163:INFO:_master_model_container: 24
+2024-03-22 14:47:12,163:INFO:_display_container: 2
+2024-03-22 14:47:12,167:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-22 14:47:12,167:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:12,397:INFO:SubProcess create_model() end ==================================
+2024-03-22 14:47:12,397:INFO:Creating metrics dataframe
+2024-03-22 14:47:12,452:INFO:Initializing create_model()
+2024-03-22 14:47:12,452:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=42),
+                    window_length=1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:12,455:INFO:Checking exceptions
+2024-03-22 14:47:12,459:INFO:Importing libraries
+2024-03-22 14:47:12,459:INFO:Copying training dataset
+2024-03-22 14:47:12,459:INFO:Defining folds
+2024-03-22 14:47:12,459:INFO:Declaring metric variables
+2024-03-22 14:47:12,459:INFO:Importing untrained model
+2024-03-22 14:47:12,459:INFO:Declaring custom model
+2024-03-22 14:47:12,467:INFO:AdaBoostRegressor Imported successfully
+2024-03-22 14:47:12,467:INFO:Cross validation set to False
+2024-03-22 14:47:12,467:INFO:Fitting Model
+2024-03-22 14:47:12,633:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=42),
+                    window_length=1)
+2024-03-22 14:47:12,633:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:12,828:INFO:Initializing create_model()
+2024-03-22 14:47:12,828:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), window_length=1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:12,828:INFO:Checking exceptions
+2024-03-22 14:47:12,828:INFO:Importing libraries
+2024-03-22 14:47:12,828:INFO:Copying training dataset
+2024-03-22 14:47:12,837:INFO:Defining folds
+2024-03-22 14:47:12,837:INFO:Declaring metric variables
+2024-03-22 14:47:12,837:INFO:Importing untrained model
+2024-03-22 14:47:12,837:INFO:Declaring custom model
+2024-03-22 14:47:12,841:INFO:BayesianRidge Imported successfully
+2024-03-22 14:47:12,841:INFO:Cross validation set to False
+2024-03-22 14:47:12,841:INFO:Fitting Model
+2024-03-22 14:47:12,900:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), window_length=1)
+2024-03-22 14:47:12,900:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:13,108:INFO:Initializing create_model()
+2024-03-22 14:47:13,108:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=42),
+                    window_length=1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:13,108:INFO:Checking exceptions
+2024-03-22 14:47:13,108:INFO:Importing libraries
+2024-03-22 14:47:13,108:INFO:Copying training dataset
+2024-03-22 14:47:13,112:INFO:Defining folds
+2024-03-22 14:47:13,112:INFO:Declaring metric variables
+2024-03-22 14:47:13,112:INFO:Importing untrained model
+2024-03-22 14:47:13,112:INFO:Declaring custom model
+2024-03-22 14:47:13,112:INFO:ExtraTreesRegressor Imported successfully
+2024-03-22 14:47:13,112:INFO:Cross validation set to False
+2024-03-22 14:47:13,112:INFO:Fitting Model
+2024-03-22 14:47:13,267:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=42),
+                    window_length=1)
+2024-03-22 14:47:13,267:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:13,560:INFO:Initializing create_model()
+2024-03-22 14:47:13,560:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=42),
+                    window_length=1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:47:13,562:INFO:Checking exceptions
+2024-03-22 14:47:13,577:INFO:Importing libraries
+2024-03-22 14:47:13,581:INFO:Copying training dataset
+2024-03-22 14:47:13,610:INFO:Defining folds
+2024-03-22 14:47:13,610:INFO:Declaring metric variables
+2024-03-22 14:47:13,610:INFO:Importing untrained model
+2024-03-22 14:47:13,610:INFO:Declaring custom model
+2024-03-22 14:47:13,621:INFO:DecisionTreeRegressor Imported successfully
+2024-03-22 14:47:13,621:INFO:Cross validation set to False
+2024-03-22 14:47:13,621:INFO:Fitting Model
+2024-03-22 14:47:13,968:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=42),
+                    window_length=1)
+2024-03-22 14:47:13,968:INFO:create_model() successfully completed......................................
+2024-03-22 14:47:14,333:INFO:_master_model_container: 24
+2024-03-22 14:47:14,333:INFO:_display_container: 2
+2024-03-22 14:47:14,339:INFO:[BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=42),
+                    window_length=1), BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), window_length=1), BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=42),
+                    window_length=1), BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=42),
+                    window_length=1)]
+2024-03-22 14:47:14,339:INFO:compare_models() successfully completed......................................
