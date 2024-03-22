@@ -2123,3 +2123,239 @@ ValueError: Expected n_neighbors <= n_samples_fit, but n_neighbors = 5, n_sample
                     regressor=DecisionTreeRegressor(random_state=42),
                     window_length=1)]
 2024-03-22 14:47:14,339:INFO:compare_models() successfully completed......................................
+2024-03-22 14:49:03,213:INFO:Initializing create_model()
+2024-03-22 14:49:03,213:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=xgboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:49:03,213:INFO:Checking exceptions
+2024-03-22 14:49:35,973:INFO:Initializing create_model()
+2024-03-22 14:49:35,973:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x0000020657589480>, estimator=xgboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-03-22 14:49:35,973:INFO:Checking exceptions
+2024-03-22 14:49:36,079:INFO:Importing libraries
+2024-03-22 14:49:36,079:INFO:Copying training dataset
+2024-03-22 14:49:36,087:INFO:Defining folds
+2024-03-22 14:49:36,087:INFO:Declaring metric variables
+2024-03-22 14:49:36,095:INFO:Importing untrained model
+2024-03-22 14:49:36,104:INFO:Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2024-03-22 14:49:36,124:INFO:Starting cross validation
+2024-03-22 14:49:36,124:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3), n_jobs=-1
+2024-03-22 14:49:37,300:INFO:Calculating mean and std
+2024-03-22 14:49:37,300:INFO:Creating metrics dataframe
+2024-03-22 14:49:37,315:INFO:Finalizing model
+2024-03-22 14:49:37,520:INFO:Uploading results into container
+2024-03-22 14:49:37,520:INFO:Uploading model into container now
+2024-03-22 14:49:37,537:INFO:_master_model_container: 25
+2024-03-22 14:49:37,537:INFO:_display_container: 3
+2024-03-22 14:49:37,540:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [1]},
+                                                   n_jobs=1)],
+                    regressor=XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=42, ...),
+                    window_length=1)
+2024-03-22 14:49:37,540:INFO:create_model() successfully completed......................................
+2024-03-22 14:49:38,464:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: mase() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 175, in mase
+    return mean_absolute_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 421, in mean_absolute_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,464:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+TypeError: rmsse() got an unexpected keyword argument 'sample_weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 185, in rmsse
+    return mean_squared_scaled_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 684, in mean_squared_scaled_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,514:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 207, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,514:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2024-03-22 14:49:38,514:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 493, in mean_squared_error
+    return root_mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 572, in root_mean_squared_error
+    mean_squared_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 497, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,514:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 168, in mape
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,514:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py:585: UserWarning:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\containers\metrics\time_series.py", line 159, in _smape_loss
+    return mean_absolute_percentage_error(
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sktime\performance_metrics\forecasting\_functions.py", line 1547, in mean_absolute_percentage_error
+    _, y_true, y_pred, multioutput = _check_reg_targets(y_true, y_pred, multioutput)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\metrics\_regression.py", line 102, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\utils\validation.py", line 457, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 8]
+
+
+
+2024-03-22 14:49:38,531:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2024-03-22 14:49:38,867:INFO:Visual Rendered Successfully
