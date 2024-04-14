@@ -10300,3 +10300,5 @@ Alternately, you can install this by running `pip install pycaret[models]`
   warnings.warn(
 
 2024-04-14 11:25:13,977:INFO:setup() successfully completed in 1.63s...............
+2024-04-14 11:45:01,648:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
