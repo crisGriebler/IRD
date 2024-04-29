@@ -788,3 +788,121 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2024-04-29 14:57:50,936:INFO:_display_container: 2
 2024-04-29 14:57:50,936:INFO:RandomForestRegressor(n_jobs=-1, random_state=3765)
 2024-04-29 14:57:50,936:INFO:compare_models() successfully completed......................................
+2024-04-29 15:02:07,984:INFO:Initializing create_model()
+2024-04-29 15:02:07,984:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000204260F6710>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-04-29 15:02:07,984:INFO:Checking exceptions
+2024-04-29 15:02:08,259:INFO:Importing libraries
+2024-04-29 15:02:08,265:INFO:Copying training dataset
+2024-04-29 15:02:08,296:INFO:Defining folds
+2024-04-29 15:02:08,300:INFO:Declaring metric variables
+2024-04-29 15:02:08,305:INFO:Importing untrained model
+2024-04-29 15:02:08,329:INFO:Random Forest Regressor Imported successfully
+2024-04-29 15:02:08,346:INFO:Starting cross validation
+2024-04-29 15:02:08,379:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-04-29 15:02:10,309:INFO:Calculating mean and std
+2024-04-29 15:02:10,315:INFO:Creating metrics dataframe
+2024-04-29 15:02:10,349:INFO:Finalizing model
+2024-04-29 15:02:14,686:INFO:Uploading results into container
+2024-04-29 15:02:14,686:INFO:Uploading model into container now
+2024-04-29 15:02:14,715:INFO:_master_model_container: 20
+2024-04-29 15:02:14,715:INFO:_display_container: 3
+2024-04-29 15:02:14,715:INFO:RandomForestRegressor(n_jobs=-1, random_state=3765)
+2024-04-29 15:02:14,715:INFO:create_model() successfully completed......................................
+2024-04-29 15:05:49,174:INFO:Initializing plot_model()
+2024-04-29 15:05:49,174:INFO:plot_model(plot=residual, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestRegressor(n_jobs=-1, random_state=3765), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000204260F6710>, system=True)
+2024-04-29 15:05:49,174:INFO:Checking exceptions
+2024-04-29 15:06:36,753:INFO:Initializing plot_model()
+2024-04-29 15:06:36,753:INFO:plot_model(plot=error, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestRegressor(n_jobs=-1, random_state=3765), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000204260F6710>, system=True)
+2024-04-29 15:06:36,760:INFO:Checking exceptions
+2024-04-29 15:06:36,792:INFO:Preloading libraries
+2024-04-29 15:06:36,805:INFO:Copying training dataset
+2024-04-29 15:06:36,805:INFO:Plot type: error
+2024-04-29 15:06:37,152:INFO:Fitting Model
+2024-04-29 15:06:37,179:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-04-29 15:06:37,179:INFO:Scoring test/hold-out set
+2024-04-29 15:06:37,842:INFO:Visual Rendered Successfully
+2024-04-29 15:06:38,034:INFO:plot_model() successfully completed......................................
+2024-04-29 15:07:28,467:INFO:Initializing plot_model()
+2024-04-29 15:07:28,467:INFO:plot_model(plot=learning, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestRegressor(n_jobs=-1, random_state=3765), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000204260F6710>, system=True)
+2024-04-29 15:07:28,467:INFO:Checking exceptions
+2024-04-29 15:07:28,514:INFO:Preloading libraries
+2024-04-29 15:07:28,522:INFO:Copying training dataset
+2024-04-29 15:07:28,522:INFO:Plot type: learning
+2024-04-29 15:07:28,831:INFO:Fitting Model
+2024-04-29 15:07:38,629:INFO:Visual Rendered Successfully
+2024-04-29 15:07:38,828:INFO:plot_model() successfully completed......................................
+2024-04-29 15:08:15,803:INFO:Initializing plot_model()
+2024-04-29 15:08:15,803:INFO:plot_model(plot=tree, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestRegressor(n_jobs=-1, random_state=3765), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000204260F6710>, system=True)
+2024-04-29 15:08:15,803:INFO:Checking exceptions
+2024-04-29 15:08:15,836:INFO:Preloading libraries
+2024-04-29 15:08:15,850:INFO:Copying training dataset
+2024-04-29 15:08:15,850:INFO:Plot type: tree
+2024-04-29 15:08:17,725:INFO:Plotting decision trees
+2024-04-29 15:08:17,775:INFO:Plotting tree 0
+2024-04-29 15:08:19,867:INFO:Plotting tree 1
+2024-04-29 15:08:20,941:INFO:Plotting tree 2
+2024-04-29 15:08:22,114:INFO:Plotting tree 3
+2024-04-29 15:08:22,993:INFO:Plotting tree 4
+2024-04-29 15:08:23,740:INFO:Plotting tree 5
+2024-04-29 15:08:24,694:INFO:Plotting tree 6
+2024-04-29 15:08:26,089:INFO:Plotting tree 7
+2024-04-29 15:08:26,955:INFO:Plotting tree 8
+2024-04-29 15:08:27,718:INFO:Plotting tree 9
+2024-04-29 15:08:28,454:INFO:Plotting tree 10
+2024-04-29 15:08:29,274:INFO:Plotting tree 11
+2024-04-29 15:08:30,004:INFO:Plotting tree 12
+2024-04-29 15:08:30,823:INFO:Plotting tree 13
+2024-04-29 15:08:31,678:INFO:Plotting tree 14
+2024-04-29 15:08:32,527:INFO:Plotting tree 15
+2024-04-29 15:08:33,375:INFO:Plotting tree 16
+2024-04-29 15:08:34,087:INFO:Plotting tree 17
+2024-04-29 15:08:34,836:INFO:Plotting tree 18
+2024-04-29 15:08:35,585:INFO:Plotting tree 19
+2024-04-29 15:08:36,767:INFO:Plotting tree 20
+2024-04-29 15:08:37,667:INFO:Plotting tree 21
+2024-04-29 15:08:38,465:INFO:Plotting tree 22
+2024-04-29 15:08:39,296:INFO:Plotting tree 23
+2024-04-29 15:08:40,129:INFO:Plotting tree 24
+2024-04-29 15:08:41,088:INFO:Plotting tree 25
+2024-04-29 15:08:41,996:INFO:Plotting tree 26
+2024-04-29 15:08:42,931:INFO:Plotting tree 27
+2024-04-29 15:08:43,973:INFO:Plotting tree 28
+2024-04-29 15:08:44,748:INFO:Plotting tree 29
+2024-04-29 15:08:45,595:INFO:Plotting tree 30
+2024-04-29 15:08:46,460:INFO:Plotting tree 31
+2024-04-29 15:08:47,376:INFO:Plotting tree 32
+2024-04-29 15:08:48,406:INFO:Plotting tree 33
+2024-04-29 15:08:49,743:INFO:Plotting tree 34
+2024-04-29 15:08:50,580:INFO:Plotting tree 35
+2024-04-29 15:08:51,422:INFO:Plotting tree 36
+2024-04-29 15:08:52,286:INFO:Plotting tree 37
+2024-04-29 15:08:53,185:INFO:Plotting tree 38
+2024-04-29 15:08:53,931:INFO:Plotting tree 39
+2024-04-29 15:08:54,786:INFO:Plotting tree 40
+2024-04-29 15:08:55,650:INFO:Plotting tree 41
+2024-04-29 15:08:56,432:INFO:Plotting tree 42
+2024-04-29 15:08:57,302:INFO:Plotting tree 43
+2024-04-29 15:08:58,304:INFO:Plotting tree 44
+2024-04-29 15:08:59,483:INFO:Plotting tree 45
+2024-04-29 15:09:00,351:INFO:Plotting tree 46
+2024-04-29 15:09:01,195:INFO:Plotting tree 47
+2024-04-29 15:09:01,936:INFO:Plotting tree 48
+2024-04-29 15:09:02,749:INFO:Plotting tree 49
+2024-04-29 15:09:04,042:INFO:Plotting tree 50
+2024-04-29 15:09:06,534:INFO:Plotting tree 51
+2024-04-29 15:09:08,322:INFO:Plotting tree 52
+2024-04-29 15:09:10,197:INFO:Plotting tree 53
+2024-04-29 15:09:11,975:INFO:Plotting tree 54
+2024-04-29 15:09:13,901:INFO:Plotting tree 55
+2024-04-29 15:09:15,770:INFO:Plotting tree 56
+2024-04-29 15:09:17,610:INFO:Plotting tree 57
+2024-04-29 15:09:19,621:INFO:Plotting tree 58
+2024-04-29 15:09:21,475:INFO:Plotting tree 59
+2024-04-29 15:09:23,512:INFO:Plotting tree 60
+2024-04-29 15:09:25,422:INFO:Plotting tree 61
+2024-04-29 15:09:27,368:INFO:Plotting tree 62
+2024-04-29 15:09:29,652:INFO:Plotting tree 63
+2024-04-29 15:09:31,960:INFO:Plotting tree 64
+2024-04-29 15:09:33,614:INFO:Plotting tree 65
