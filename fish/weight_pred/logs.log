@@ -8423,3 +8423,41 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                     min_samples_leaf=3, min_samples_split=9, n_estimators=230,
                     n_jobs=-1, random_state=124)
 2024-05-02 19:31:25,505:INFO:tune_model() successfully completed......................................
+2024-05-02 19:42:34,844:INFO:Initializing plot_model()
+2024-05-02 19:42:34,844:INFO:plot_model(plot=residuals, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=124), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000153E44776A0>, system=True)
+2024-05-02 19:42:34,844:INFO:Checking exceptions
+2024-05-02 19:42:34,877:INFO:Preloading libraries
+2024-05-02 19:42:34,898:INFO:Copying training dataset
+2024-05-02 19:42:34,898:INFO:Plot type: residuals
+2024-05-02 19:42:34,961:INFO:Fitting Model
+2024-05-02 19:42:34,961:WARNING:C:\Users\crist\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-02 19:42:35,050:INFO:Scoring test/hold-out set
+2024-05-02 19:42:35,685:INFO:Visual Rendered Successfully
+2024-05-02 19:42:35,841:INFO:plot_model() successfully completed......................................
+2024-05-02 19:47:04,080:INFO:Initializing plot_model()
+2024-05-02 19:47:04,080:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=124), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000153E44776A0>, system=True)
+2024-05-02 19:47:04,080:INFO:Checking exceptions
+2024-05-02 19:47:04,117:INFO:Preloading libraries
+2024-05-02 19:47:04,128:INFO:Copying training dataset
+2024-05-02 19:47:04,141:INFO:Plot type: feature
+2024-05-02 19:47:04,142:WARNING:No coef_ found. Trying feature_importances_
+2024-05-02 19:47:04,428:INFO:Visual Rendered Successfully
+2024-05-02 19:47:04,612:INFO:plot_model() successfully completed......................................
+2024-05-02 19:52:49,679:INFO:Initializing plot_model()
+2024-05-02 19:52:49,685:INFO:plot_model(plot=manifold, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=124), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000153E44776A0>, system=True)
+2024-05-02 19:52:49,685:INFO:Checking exceptions
+2024-05-02 19:52:49,713:INFO:Preloading libraries
+2024-05-02 19:52:49,736:INFO:Copying training dataset
+2024-05-02 19:52:49,736:INFO:Plot type: manifold
+2024-05-02 19:52:49,997:INFO:Fitting & Transforming Model
+2024-05-02 19:52:51,632:INFO:Visual Rendered Successfully
+2024-05-02 19:52:51,818:INFO:plot_model() successfully completed......................................
+2024-05-02 19:55:45,299:INFO:Initializing interpret_model()
+2024-05-02 19:55:45,299:INFO:interpret_model(estimator=ExtraTreesRegressor(n_jobs=-1, random_state=124), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000153E44776A0>)
+2024-05-02 19:55:45,299:INFO:Checking exceptions
+2024-05-02 19:55:45,299:ERROR:
+'shap' is a soft dependency and not included in the pycaret installation. Please run: `pip install shap` to install.
+Alternately, you can install this by running `pip install pycaret[analysis]`
+NoneType: None
