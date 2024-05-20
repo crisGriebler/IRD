@@ -1,0 +1,2 @@
+2024-05-20 20:21:06,066:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
