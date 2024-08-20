@@ -19,4 +19,4 @@ fig = px.scatter_3d(df, x='comprimento_Total', y='peso', z='altura', color='peso
 fig.show()
 
 ## passar para ipynb 
-## add na apresentacao
+## add na apresentacao do dia  20/08
