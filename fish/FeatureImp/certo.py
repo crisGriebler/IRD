@@ -17,3 +17,5 @@ fig = px.scatter_3d(df, x='comprimento_Total', y='peso', z='altura', color='peso
                     color_continuous_scale=px.colors.cyclical.IceFire)
 
 fig.show()
+
+## passar para ipynb 
