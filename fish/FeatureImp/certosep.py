@@ -1,7 +1,7 @@
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_excel("Variavel_sep.xlsx")
+df = pd.read_excel("Variavel_out.xlsx")
 
 df.columns = df.columns.str.strip()
 
