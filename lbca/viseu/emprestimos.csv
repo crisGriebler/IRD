@@ -1,0 +1,179 @@
+ID,Tipo,Data Cadastro,Data Encerramento,Sentenças Proferidas,UF
+1,Empréstimos,2023-01-01,,Extinção,ES
+2,Empréstimos,2023-01-02,,Extinção,MG
+3,Empréstimos,2023-01-03,2023-07-01,Extinção,BA
+4,Empréstimos,2023-01-04,2023-05-31,Extinção,PA
+5,Empréstimos,2023-01-05,2023-11-03,Extinção,SP
+6,Empréstimos,2023-01-06,,Extinção,BA
+7,Empréstimos,2023-01-07,,Dano Moral,SP
+8,Empréstimos,2023-01-08,,Improcedência,MG
+9,Empréstimos,2023-01-09,2023-03-07,Extinção,AM
+10,Empréstimos,2023-01-10,2023-10-01,Extinção,ES
+11,Empréstimos,2023-01-11,,Improcedência,CE
+12,Empréstimos,2023-01-12,,Extinção,RJ
+13,Empréstimos,2023-01-13,2023-10-20,Improcedência,RJ
+14,Empréstimos,2023-01-14,2023-05-24,Extinção,PA
+15,Empréstimos,2023-01-15,,Improcedência,SP
+16,Empréstimos,2023-01-16,2023-11-08,Dano Moral,RJ
+17,Empréstimos,2023-01-17,2023-08-03,Improcedência,BA
+18,Empréstimos,2023-01-18,2023-04-14,Dano Moral,PA
+19,Empréstimos,2023-01-19,2023-12-11,Extinção,MG
+20,Empréstimos,2023-01-20,2023-12-09,Apenas Obrigação de Fazer,SP
+21,Empréstimos,2023-01-21,2023-11-25,Extinção,RS
+22,Empréstimos,2023-01-22,,Improcedência,RJ
+23,Empréstimos,2023-01-23,2023-04-20,Improcedência,RJ
+24,Empréstimos,2023-01-24,,Extinção,MG
+25,Empréstimos,2023-01-25,,Apenas Obrigação de Fazer,PA
+26,Empréstimos,2023-01-26,2023-04-16,Extinção,RJ
+27,Empréstimos,2023-01-27,,Extinção,CE
+28,Empréstimos,2023-01-28,2023-11-08,Extinção,ES
+29,Empréstimos,2023-01-29,,Extinção,BA
+30,Empréstimos,2023-01-30,2023-12-30,Extinção,MG
+31,Empréstimos,2023-01-31,2023-08-31,Dano Moral,AM
+32,Empréstimos,2023-02-01,,Extinção,RS
+33,Empréstimos,2023-02-02,2023-11-05,Improcedência,SP
+34,Empréstimos,2023-02-03,2023-10-09,Extinção,PR
+35,Empréstimos,2023-02-04,2023-03-09,Extinção,ES
+36,Empréstimos,2023-02-05,2023-08-09,Improcedência,PA
+37,Empréstimos,2023-02-06,2024-01-18,Improcedência,SC
+38,Empréstimos,2023-02-07,2023-12-11,Improcedência,PE
+39,Empréstimos,2023-02-08,2023-05-30,Apenas Obrigação de Fazer,MG
+40,Empréstimos,2023-02-09,,Dano Moral,RJ
+41,Empréstimos,2023-02-10,2023-03-18,Improcedência,GO
+42,Empréstimos,2023-02-11,,Dano Moral,PR
+43,Empréstimos,2023-02-12,2023-03-15,Extinção,MG
+44,Empréstimos,2023-02-13,2023-09-02,Improcedência,AM
+45,Empréstimos,2023-02-14,,Improcedência,DF
+46,Empréstimos,2023-02-15,2024-01-26,Improcedência,ES
+47,Empréstimos,2023-02-16,2023-11-09,Apenas Dano Material,AM
+48,Empréstimos,2023-02-17,2023-09-20,Dano Moral,RS
+49,Empréstimos,2023-02-18,2023-12-22,Improcedência,DF
+50,Empréstimos,2023-02-19,2023-11-30,Dano Moral,RJ
+51,Empréstimos,2023-02-20,,Dano Moral,GO
+52,Empréstimos,2023-02-21,2023-04-30,Apenas Obrigação de Fazer,ES
+53,Empréstimos,2023-02-22,2023-06-07,Dano Moral,PR
+54,Empréstimos,2023-02-23,,Dano Moral,RS
+55,Empréstimos,2023-02-24,2023-09-15,Dano Moral,RS
+56,Empréstimos,2023-02-25,,Dano Moral,ES
+57,Empréstimos,2023-02-26,2023-08-22,Extinção,ES
+58,Empréstimos,2023-02-27,2023-09-01,Extinção,RJ
+59,Empréstimos,2023-02-28,2023-06-28,Extinção,BA
+60,Empréstimos,2023-03-01,2023-12-30,Dano Moral,SP
+61,Empréstimos,2023-03-02,2024-01-01,Improcedência,RJ
+62,Empréstimos,2023-03-03,,Improcedência,ES
+63,Empréstimos,2023-03-04,2023-04-28,Dano Moral,RJ
+64,Empréstimos,2023-03-05,2023-08-24,Extinção,SC
+65,Empréstimos,2023-03-06,,Extinção,PA
+66,Empréstimos,2023-03-07,2023-08-28,Extinção,RJ
+67,Empréstimos,2023-03-08,2023-08-03,Improcedência,SP
+68,Empréstimos,2023-03-09,2023-07-07,Extinção,GO
+69,Empréstimos,2023-03-10,2023-11-26,Dano Moral,SP
+70,Empréstimos,2023-03-11,,Improcedência,GO
+71,Empréstimos,2023-03-12,2023-07-08,Apenas Dano Material,SP
+72,Empréstimos,2023-03-13,2024-01-28,Extinção,PA
+73,Empréstimos,2023-03-14,2023-08-30,Dano Moral,SP
+74,Empréstimos,2023-03-15,2023-05-02,Extinção,SP
+75,Empréstimos,2023-03-16,2023-11-20,Improcedência,PR
+76,Empréstimos,2023-03-17,,Extinção,ES
+77,Empréstimos,2023-03-18,,Improcedência,ES
+78,Empréstimos,2023-03-19,2023-08-20,Dano Moral,CE
+79,Empréstimos,2023-03-20,2024-03-05,Dano Moral,CE
+80,Empréstimos,2023-03-21,2024-02-05,Improcedência,RJ
+81,Empréstimos,2023-03-22,2024-01-28,Extinção,AM
+82,Empréstimos,2023-03-23,2023-06-03,Extinção,BA
+83,Empréstimos,2023-03-24,2023-05-22,Improcedência,RJ
+84,Empréstimos,2023-03-25,2023-08-05,Improcedência,DF
+85,Empréstimos,2023-03-26,2023-08-15,Improcedência,ES
+86,Empréstimos,2023-03-27,2023-10-14,Dano Moral,PE
+87,Empréstimos,2023-03-28,2023-04-27,Apenas Obrigação de Fazer,AM
+88,Empréstimos,2023-03-29,2024-03-12,Dano Moral,PE
+89,Empréstimos,2023-03-30,,Improcedência,AM
+90,Empréstimos,2023-03-31,2023-05-04,Extinção,RJ
+91,Empréstimos,2023-04-01,2023-05-06,Extinção,SP
+92,Empréstimos,2023-04-02,2023-08-03,Improcedência,ES
+93,Empréstimos,2023-04-03,,Dano Moral,GO
+94,Empréstimos,2023-04-04,,Extinção,CE
+95,Empréstimos,2023-04-05,2023-12-26,Extinção,PR
+96,Empréstimos,2023-04-06,2023-10-07,Extinção,SP
+97,Empréstimos,2023-04-07,2024-03-22,Dano Moral,RS
+98,Empréstimos,2023-04-08,2023-11-16,Improcedência,MG
+99,Empréstimos,2023-04-09,2023-10-21,Dano Moral,AM
+100,Empréstimos,2023-04-10,2023-09-23,Extinção,SP
+101,Empréstimos,2023-04-11,2024-01-04,Improcedência,ES
+102,Empréstimos,2023-04-12,2023-11-13,Improcedência,AM
+103,Empréstimos,2023-04-13,2023-08-17,Extinção,AM
+104,Empréstimos,2023-04-14,2024-02-02,Dano Moral,RJ
+105,Empréstimos,2023-04-15,2024-01-19,Extinção,PR
+106,Empréstimos,2023-04-16,2024-01-11,Dano Moral,RJ
+107,Empréstimos,2023-04-17,2023-07-17,Dano Moral,PE
+108,Empréstimos,2023-04-18,2024-03-25,Improcedência,GO
+109,Empréstimos,2023-04-19,2023-11-15,Extinção,DF
+110,Empréstimos,2023-04-20,2024-03-05,Improcedência,RJ
+111,Superendividamento,2023-04-21,,Extinção,CE
+112,Superendividamento,2023-04-22,2023-05-31,Extinção,GO
+113,Superendividamento,2023-04-23,2023-09-26,Extinção,SP
+114,Superendividamento,2023-04-24,2024-04-11,Extinção,PR
+115,Superendividamento,2023-04-25,,Extinção,SP
+116,Superendividamento,2023-04-26,2023-09-14,Improcedência,SC
+117,Superendividamento,2023-04-27,,Improcedência,CE
+118,Superendividamento,2023-04-28,,Extinção,RJ
+119,Superendividamento,2023-04-29,2023-09-18,Extinção,ES
+120,Superendividamento,2023-04-30,,Extinção,MG
+121,Superendividamento,2023-05-01,2023-08-19,Dano Moral,AM
+122,Superendividamento,2023-05-02,2023-11-15,Extinção,MG
+123,Superendividamento,2023-05-03,,Extinção,MG
+124,Superendividamento,2023-05-04,,Extinção,DF
+125,Superendividamento,2023-05-05,,Extinção,PR
+126,Superendividamento,2023-05-06,,Extinção,GO
+127,Superendividamento,2023-05-07,,Extinção,BA
+128,Superendividamento,2023-05-08,2024-02-10,Extinção,MG
+129,Superendividamento,2023-05-09,,Extinção,CE
+130,Superendividamento,2023-05-10,,Extinção,SC
+131,Superendividamento,2023-05-11,2023-09-30,Improcedência,ES
+132,Superendividamento,2023-05-12,,Improcedência,ES
+133,Superendividamento,2023-05-13,,Extinção,AM
+134,Superendividamento,2023-05-14,2023-09-17,Extinção,DF
+135,Superendividamento,2023-05-15,2024-02-19,Extinção,PR
+136,Superendividamento,2023-05-16,,Apenas Dano Material,PA
+137,Superendividamento,2023-05-17,2023-12-27,Dano Moral,ES
+138,Superendividamento,2023-05-18,,Apenas Obrigação de Fazer,RJ
+139,Superendividamento,2023-05-19,2023-12-18,Extinção,SP
+140,Superendividamento,2023-05-20,,Improcedência,DF
+141,Superendividamento,2023-05-21,2023-11-11,Improcedência,RS
+142,Superendividamento,2023-05-22,2023-07-17,Improcedência,BA
+143,Superendividamento,2023-05-23,2024-04-21,Extinção,GO
+144,Superendividamento,2023-05-24,2023-12-28,Extinção,RJ
+145,Superendividamento,2023-05-25,,Dano Moral,SP
+146,Superendividamento,2023-05-26,2024-04-19,Extinção,GO
+147,Superendividamento,2023-05-27,2024-05-03,Dano Moral,PR
+148,Superendividamento,2023-05-28,2024-01-04,Extinção,RS
+149,Superendividamento,2023-05-29,2023-10-05,Extinção,RJ
+150,Superendividamento,2023-05-30,,Improcedência,ES
+151,Superendividamento,2023-05-31,2024-02-23,Extinção,MG
+152,Superendividamento,2023-06-01,2023-09-02,Improcedência,GO
+153,Superendividamento,2023-06-02,2024-02-15,Improcedência,MG
+154,Superendividamento,2023-06-03,2024-04-22,Dano Moral,ES
+155,Superendividamento,2023-06-04,,Extinção,MG
+156,Superendividamento,2023-06-05,2024-01-08,Extinção,ES
+157,Superendividamento,2023-06-06,2023-08-04,Extinção,ES
+158,Superendividamento,2023-06-07,2023-11-25,Improcedência,DF
+159,Superendividamento,2023-06-08,2023-09-26,Improcedência,CE
+160,Superendividamento,2023-06-09,2023-08-17,Dano Moral,BA
+161,Superendividamento,2023-06-10,2024-04-08,Extinção,DF
+162,Superendividamento,2023-06-11,,Dano Moral,ES
+163,Superendividamento,2023-06-12,,Extinção,MG
+164,Superendividamento,2023-06-13,2024-06-11,Improcedência,MG
+165,Superendividamento,2023-06-14,2024-05-11,Improcedência,RS
+166,Superendividamento,2023-06-15,2023-11-06,Extinção,MG
+167,Superendividamento,2023-06-16,2023-12-18,Dano Moral,BA
+168,Superendividamento,2023-06-17,,Extinção,GO
+169,Superendividamento,2023-06-18,,Extinção,PE
+170,Superendividamento,2023-06-19,,Extinção,RJ
+171,Superendividamento,2023-06-20,2023-09-15,Extinção,ES
+172,Superendividamento,2023-06-21,2024-04-03,Extinção,RJ
+173,Superendividamento,2023-06-22,2023-11-19,Improcedência,RJ
+174,Superendividamento,2023-06-23,2024-04-29,Dano Moral,GO
+175,Superendividamento,2023-06-24,2024-01-08,Improcedência,AM
+176,Superendividamento,2023-06-25,2024-04-26,Improcedência,GO
+177,Superendividamento,2023-06-26,2024-01-13,Dano Moral,RJ
+178,Superendividamento,2023-06-27,2023-09-22,Extinção,SP
