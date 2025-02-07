@@ -1,0 +1,101 @@
+Data Cadastro,Tipo,Data Encerramento,Sentenças Proferidas,UF
+2024-02-04,Empréstimos,,Improcedência,BA
+2024-02-10,Empréstimos,,Extinção,PA
+2024-02-14,Superendividamento,,Improcedência,SC
+2024-02-15,Empréstimos,2024-12-21,Improcedência,RJ
+2024-02-18,Empréstimos,,Extinção,AM
+2024-02-21,Superendividamento,2024-09-22,Dano Moral,AM
+2024-02-27,Empréstimos,,Dano Moral,RS
+2024-03-02,Superendividamento,2024-12-04,Extinção,PR
+2024-03-06,Superendividamento,,Extinção,DF
+2024-03-10,Superendividamento,,Extinção,GO
+2024-03-12,Empréstimos,2025-03-03,Extinção,SP
+2024-03-15,Superendividamento,2024-09-10,Extinção,SP
+2024-03-17,Empréstimos,2024-10-28,Extinção,GO
+2024-03-18,Superendividamento,2025-02-23,Dano Moral,DF
+2024-03-22,Superendividamento,2024-10-12,Dano Moral,AM
+2024-03-25,Superendividamento,2024-05-20,Dano Moral,MG
+2024-03-26,Superendividamento,2024-12-27,Improcedência,RJ
+2024-03-28,Superendividamento,2025-01-01,Dano Moral,SP
+2024-04-01,Superendividamento,2024-10-26,Improcedência,GO
+2024-04-06,Superendividamento,2025-03-05,Extinção,MG
+2024-04-07,Superendividamento,2024-05-09,Dano Moral,PR
+2024-04-09,Empréstimos,,Extinção,BA
+2024-04-11,Superendividamento,2024-09-22,Improcedência,SP
+2024-04-12,Empréstimos,2025-03-05,Improcedência,CE
+2024-04-14,Empréstimos,2024-10-31,Apenas Dano Material,ES
+2024-04-17,Superendividamento,2024-09-14,Dano Moral,MG
+2024-04-19,Superendividamento,2024-10-30,Dano Moral,MG
+2024-04-21,Superendividamento,,Extinção,ES
+2024-04-22,Superendividamento,2024-09-13,Extinção,CE
+2024-05-02,Superendividamento,,Improcedência,RS
+2024-05-06,Empréstimos,2025-03-08,Dano Moral,RJ
+2024-05-09,Empréstimos,,Improcedência,SC
+2024-05-11,Superendividamento,2024-10-19,Dano Moral,MG
+2024-05-12,Empréstimos,2024-12-23,Improcedência,ES
+2024-05-17,Superendividamento,2025-02-13,Improcedência,ES
+2024-05-21,Empréstimos,2024-07-12,Improcedência,RJ
+2024-05-23,Superendividamento,,Dano Moral,SC
+2024-05-24,Empréstimos,,Improcedência,MG
+2024-05-25,Superendividamento,,Dano Moral,RS
+2024-05-27,Superendividamento,2024-07-18,Apenas Dano Material,DF
+2024-06-01,Superendividamento,2025-04-09,Extinção,PR
+2024-06-04,Empréstimos,2024-10-11,Extinção,MG
+2024-06-12,Empréstimos,,Improcedência,MG
+2024-07-05,Superendividamento,2024-11-30,Extinção,SP
+2024-07-06,Superendividamento,2025-04-23,Dano Moral,GO
+2024-07-09,Superendividamento,,Dano Moral,AM
+2024-07-10,Empréstimos,,Extinção,PE
+2024-07-11,Superendividamento,,Improcedência,PR
+2024-07-12,Empréstimos,2025-01-05,Improcedência,PR
+2024-07-13,Superendividamento,2024-12-02,Apenas Dano Material,PA
+2024-07-14,Superendividamento,,Dano Moral,SC
+2024-07-18,Superendividamento,2025-06-11,Improcedência,AM
+2024-07-19,Empréstimos,2025-04-24,Extinção,PR
+2024-07-20,Superendividamento,,Apenas Dano Material,SP
+2024-07-21,Superendividamento,2024-11-01,Improcedência,DF
+2024-07-22,Empréstimos,2025-06-28,Dano Moral,PR
+2024-08-02,Empréstimos,2025-07-21,Dano Moral,PA
+2024-08-04,Superendividamento,2024-09-20,Improcedência,SP
+2024-08-05,Superendividamento,2024-09-30,Improcedência,PE
+2024-08-06,Superendividamento,2024-12-16,Extinção,RJ
+2024-08-07,Empréstimos,,Extinção,CE
+2024-08-08,Superendividamento,2025-07-17,Extinção,AM
+2024-08-09,Superendividamento,2025-05-29,Improcedência,RJ
+2024-08-11,Superendividamento,2025-05-13,Apenas Dano Material,AM
+2024-08-12,Superendividamento,2024-11-10,Extinção,PA
+2024-08-17,Superendividamento,2024-10-19,Improcedência,PA
+2024-08-18,Superendividamento,2025-02-20,Dano Moral,PE
+2024-08-20,Superendividamento,,Improcedência,MG
+2024-08-24,Empréstimos,2025-02-28,Improcedência,PR
+2024-08-25,Superendividamento,2025-02-12,Extinção,SC
+2024-08-27,Superendividamento,2025-08-10,Extinção,GO
+2024-09-04,Superendividamento,,Extinção,RJ
+2024-09-07,Superendividamento,2024-11-06,Extinção,MG
+2024-09-08,Superendividamento,2025-06-09,Improcedência,CE
+2024-09-09,Superendividamento,2025-01-03,Improcedência,RJ
+2024-09-11,Superendividamento,2024-12-24,Improcedência,SP
+2024-09-15,Superendividamento,2025-07-12,Improcedência,AM
+2024-09-17,Empréstimos,2025-05-18,Improcedência,ES
+2024-09-18,Superendividamento,,Extinção,BA
+2024-09-25,Empréstimos,2025-08-13,Improcedência,MG
+2024-10-03,Empréstimos,2025-01-05,Dano Moral,PR
+2024-10-06,Superendividamento,2025-01-16,Improcedência,GO
+2024-10-07,Superendividamento,2024-11-22,Improcedência,ES
+2024-10-09,Superendividamento,2025-10-03,Extinção,RJ
+2024-10-11,Superendividamento,2024-11-24,Improcedência,RJ
+2024-10-12,Superendividamento,2025-03-18,Extinção,CE
+2024-10-13,Superendividamento,2025-09-09,Improcedência,RJ
+2024-10-15,Superendividamento,,Dano Moral,SP
+2024-10-20,Empréstimos,,Dano Moral,RJ
+2024-10-22,Superendividamento,2025-05-16,Improcedência,SP
+2024-10-23,Superendividamento,,Extinção,PA
+2024-10-24,Empréstimos,2025-07-01,Extinção,MG
+2024-10-25,Superendividamento,2025-01-11,Improcedência,BA
+2024-10-26,Empréstimos,2024-12-11,Improcedência,MG
+2024-11-05,Superendividamento,,Improcedência,PA
+2024-11-08,Superendividamento,2025-09-11,Improcedência,AM
+2024-11-10,Superendividamento,,Extinção,SC
+2024-11-13,Empréstimos,,Extinção,PA
+2024-11-16,Superendividamento,2025-06-09,Extinção,RJ
+2024-11-24,Empréstimos,2025-06-16,Improcedência,CE
