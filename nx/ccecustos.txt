@@ -1,0 +1,240 @@
+﻿/*
+    Criado por: Cristian Griebler
+    Data de criação: 17/02/2025
+    Objetivo: Calcular os rendimentos diários de conta corrente e custos com base nas posições, movimentações, IR isento e dividendos.
+    Detalhes:
+    - Filtro para ativos com CalculoPosicaoId = 2.
+    - Converte valores entre moedas BRL e USD.
+    - Calcula rendimentos considerando posição anterior e proventos.
+    - Insere os resultados na tabela rendimento_conta_corrente_e_custos.
+*/
+CREATE OR REPLACE TABLE `nexuslegado_azuredb_hml.rendimento_contacorrente_e_custos`
+PARTITION BY DATE_TRUNC((DataPosicao), MONTH)
+AS
+WITH CotacaoDolar AS (
+    SELECT 
+        p.Data, 
+        p.Valor AS CotacaoDolar
+    FROM `dbo.Precificacao` p
+    INNER JOIN `dbo.Moeda` m ON m.Id = p.MoedaId
+    WHERE p.EhMoeda = TRUE AND m.CodigoIso = 'USD'
+    AND p.Valor <> 0
+), 
+ContaCorrenteParaCalculo AS (
+    SELECT 
+        a.Id,
+        a.Nome,
+        a.TipoAtivo,
+        a.LocalId
+    FROM `dbo.Ativo` a 
+    JOIN `dbo.SubClasse` sub ON a.SubClasseId = sub.Id
+    WHERE sub.CalculoPosicaoId = 2
+),
+CustosParaCalculo AS (
+    SELECT 
+        a.Id,
+        a.Nome,
+        a.TipoAtivo,
+        a.LocalId
+    FROM `dbo.Ativo` a 
+    JOIN `dbo.SubClasse` sub ON a.SubClasseId = sub.Id
+    WHERE sub.CalculoPosicaoId = 3
+),
+MovimentacoesContaCorrente AS (
+    SELECT 
+        m.ClienteId,
+        m.CustodiaId,
+        m.DataLiquidacao AS Data,
+        cc.LocalId,
+        SUM(m.Valor) AS Movimentos,
+           CASE 
+            WHEN cc.LocalId = 2 THEN  SUM(m.Valor) * COALESCE(cd.CotacaoDolar, 1)
+            ELSE  SUM(m.Valor)
+        END AS MovimentosBrl,
+        CASE 
+            WHEN cc.LocalId = 1 THEN  SUM(m.Valor) / COALESCE(cd.CotacaoDolar, 1)
+            ELSE SUM(m.Valor)
+        END AS MovimentosUsd
+    FROM `dbo.Movimentacao` m
+     INNER JOIN ContaCorrenteParaCalculo cc ON cc.Id = m.AtivoId
+     INNER JOIN CotacaoDolar cd ON m.DataLiquidacao = cd.Data
+    WHERE m.TipoMovimentacaoId IN (26,33) --(26, 33)
+    GROUP BY m.ClienteId, m.CustodiaId, cc.LocalId, m.DataLiquidacao,cd.CotacaoDolar
+),
+MovimentacoesCustos AS (
+    SELECT 
+        m.ClienteId,
+        m.CustodiaId,
+        m.AtivoId,
+        m.DataLiquidacao AS Data,
+        c.LocalId,
+        SUM(m.Valor) AS Movimentos,
+           CASE 
+            WHEN c.LocalId = 2 THEN  SUM(m.Valor) * COALESCE(cd.CotacaoDolar, 1)
+            ELSE  SUM(m.Valor)
+        END AS MovimentosBrl,
+        CASE 
+            WHEN c.LocalId = 1 THEN  SUM(m.Valor) / COALESCE(cd.CotacaoDolar, 1)
+            ELSE SUM(m.Valor)
+        END AS MovimentosUsd
+    FROM `dbo.Movimentacao` m
+    INNER JOIN CustosParaCalculo c ON c.Id = m.AtivoId
+    LEFT JOIN CotacaoDolar cd ON m.DataLiquidacao = cd.Data
+    WHERE m.TipoMovimentacaoId IN (34) -- Taxas/Fees Custos
+    GROUP BY m.ClienteId, m.CustodiaId,m.AtivoId,c.LocalId, m.dataliquidacao, cd.CotacaoDolar
+),
+PosicoesComAnteriorContaCorrente AS (
+    SELECT 
+        p.ClienteId,
+        cliente.Nome AS Cliente,
+        p.CustodiaId,
+        cust.Nome AS Custodia,
+        p.AtivoId,
+        ativo.Nome AS Ativo,
+        moeda.Nome AS Moeda,
+        CASE
+            WHEN cust.LocalCustodiaId = 1 THEN 'Brasil'
+            WHEN cust.LocalCustodiaId = 2 THEN 'Offshore'
+            ELSE NULL
+        END AS Local,
+        hiperclasse.Nome AS hiperclasse,
+        superclasse.Nome AS superclasse,
+        classe.Nome AS classe,
+        subclasse.Nome as subclasse,
+        p.DataPosicao
+    FROM `nexuslegado_azuredb_hml.posicao_conta_corrente` p
+    INNER JOIN ContaCorrenteParaCalculo cc ON p.AtivoId = cc.Id
+    LEFT JOIN `dbo.Ativo` ativo ON ativo.Id = p.AtivoId
+    LEFT JOIN `dbo.SubClasse` subclasse ON ativo.SubClasseId = subclasse.Id
+    LEFT JOIN  `dbo.SuperClasse`superclasse ON subclasse.SuperClasseId = superclasse.Id
+    LEFT JOIN `dbo.HiperClasse` hiperclasse ON subclasse.HiperClasseId = hiperclasse.Id
+    LEFT JOIN `dbo.Classe` classe on classe.Id = subclasse.ClasseId
+    LEFT JOIN `dbo.Cliente` cliente ON p.ClienteId = cliente.Id
+    LEFT JOIN `dbo.Custodia` cust ON p.CustodiaId= cust.Id
+    LEFT JOIN `dbo.Moeda` moeda ON ativo.MoedaId = moeda.Id
+),
+PosicoesComAnteriorCustos AS (
+    SELECT 
+        p.ClienteId,
+        cliente.Nome AS Cliente,
+        p.CustodiaId,
+        cust.Nome AS Custodia,
+        p.AtivoId,
+        ativo.Nome AS Ativo,
+        moeda.Nome AS Moeda,
+        CASE
+            WHEN cust.LocalCustodiaId = 1 THEN 'Brasil'
+            WHEN cust.LocalCustodiaId = 2 THEN 'Offshore'
+            ELSE NULL
+        END AS Local,
+        hiperclasse.Nome AS hiperclasse,
+        superclasse.Nome AS superclasse,
+        classe.Nome AS classe,
+        subclasse.Nome as subclasse,
+        p.DataPosicao
+    FROM `nexuslegado_azuredb_hml.posicao_custo` p
+    INNER JOIN CustosParaCalculo cc ON p.AtivoId = cc.Id
+    LEFT JOIN `dbo.Ativo` ativo ON ativo.Id = p.AtivoId
+    LEFT JOIN `dbo.SubClasse` subclasse ON ativo.SubClasseId = subclasse.Id
+    LEFT JOIN  `dbo.SuperClasse`superclasse ON subclasse.SuperClasseId = superclasse.Id
+    LEFT JOIN `dbo.HiperClasse` hiperclasse ON subclasse.HiperClasseId = hiperclasse.Id
+    LEFT JOIN `dbo.Classe` classe on classe.Id = subclasse.ClasseId
+    LEFT JOIN `dbo.Cliente` cliente ON p.ClienteId = cliente.Id
+    LEFT JOIN `dbo.Custodia` cust ON p.CustodiaId= cust.Id
+    LEFT JOIN `dbo.Moeda` moeda ON ativo.MoedaId = moeda.Id
+),
+
+RendimentoContaCorrente AS (
+    SELECT 
+        p.ClienteId,
+        p.Cliente,
+        p.CustodiaId,
+        p.Custodia,
+        p.AtivoId,
+        p.Ativo,
+        p.moeda,
+        p.local,
+        p.hiperclasse,
+        p.superclasse,
+        p.classe,
+        p.subclasse,
+        p.DataPosicao,
+        -- Rendimento Original
+      COALESCE(mcc.Movimentos, 0) AS Rendimento,
+        -- Rendimento em BRL
+       COALESCE(mcc.MovimentosBrl, 0) AS RendimentoBrl,
+        -- Rendimento em USD
+       COALESCE(mcc.MovimentosUsd, 0) AS RendimentoUsd
+    FROM PosicoesComAnteriorContaCorrente p
+    LEFT JOIN MovimentacoesContaCorrente mcc 
+    ON p.ClienteId = mcc.ClienteId 
+    AND p.CustodiaId = mcc.CustodiaId 
+    AND p.DataPosicao = mcc.Data
+),
+RendimentoCustos AS (
+    SELECT 
+        p.ClienteId,
+        p.Cliente,
+        p.CustodiaId,
+        p.Custodia,
+        p.AtivoId,
+        p.Ativo,
+        p.moeda,
+        p.local,
+        p.hiperclasse,
+        p.superclasse,
+        p.classe,
+        p.subclasse,
+        p.DataPosicao,
+        -- Rendimento Original
+        COALESCE(mc.Movimentos, 0) AS Rendimento,
+        -- Rendimento em BRL
+        COALESCE(mc.MovimentosBrl, 0) AS RendimentoBrl,
+        -- Rendimento em USD
+        COALESCE(mc.MovimentosUsd, 0) AS RendimentoUsd
+    FROM PosicoesComAnteriorCustos p
+    LEFT JOIN MovimentacoesCustos mc
+     ON p.ClienteId = mc.ClienteId 
+     AND p.CustodiaId = mc.CustodiaId 
+     AND mc.AtivoId = p.AtivoId 
+     AND p.DataPosicao = mc.Data
+)
+
+-- Consolidação dos Resultados
+
+SELECT 
+    Cliente,
+    Custodia,
+    Ativo,
+    moeda,
+    local,
+    hiperclasse,
+    superclasse,
+    classe,
+    subclasse,
+    DataPosicao,
+    Rendimento, 
+    RendimentoBrl, 
+    RendimentoUsd,
+FROM RendimentoContaCorrente
+UNION ALL
+SELECT 
+    Cliente,
+    Custodia,
+    Ativo,
+    moeda,
+    local,
+    hiperclasse,
+    superclasse,
+    classe,
+    subclasse,
+    DataPosicao,
+    Rendimento, 
+    RendimentoBrl, 
+    RendimentoUsd,
+FROM RendimentoCustos
+        -- Finaliza Transação
+
+
+
+

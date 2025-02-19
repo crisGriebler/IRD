@@ -1,0 +1,193 @@
+﻿-- Metadata
+/*
+    Criado por: Guilherme Garmatter
+    Data de criação: 13/02/2025
+    Objetivo: Calcular os rendimentos diários de ativos financeiros com base nas posições, movimentações, IR isento e dividendos.
+    Detalhes:
+    - Filtro para ativos com CalculoPosicaoId = 1.
+    - Converte valores entre moedas BRL e USD.
+    - Calcula rendimentos considerando posição anterior e proventos.
+    - Insere os resultados na tabela rendimento_ativo.
+*/
+CREATE OR REPLACE TABLE `gavb-nexus-investimentos-hml.nexuslegado_azuredb_hml.rendimento_ativo` 
+PARTITION BY DATE_TRUNC((DataPosicao), MONTH)
+AS
+ WITH CotacaoDolar AS (
+    SELECT 
+        p.Data, 
+        p.Valor AS CotacaoDolar
+    FROM `dbo.Precificacao` p
+    INNER JOIN `dbo.Moeda` m ON m.Id = p.MoedaId
+    WHERE p.EhMoeda = TRUE AND m.CodigoIso = 'USD'
+    AND p.Valor <> 0
+),
+-- pega ativos para os quais iremos calcular rendimento
+AtivosParaCalculo AS (
+    SELECT 
+    a.Id,
+    a.Nome,
+    a.TipoAtivo,
+    a.LocalId
+    FROM `dbo.Ativo` a 
+    JOIN `dbo.SubClasse` sub ON a.SubClasseId = sub.Id
+    WHERE sub.CalculoPosicaoId = 1
+),
+-- pega soma das movimentações para cada ativo/custodia/dia
+Movimentacoes AS (
+    SELECT 
+        m.ClienteId,
+        m.CustodiaId,
+        m.AtivoId,
+        m.DataCotizacao AS Data,
+        SUM(CASE 
+            WHEN m.TipoMovimentacaoId IN (2,3,8,9,12,17,18,19,20,21,26,31,32) THEN m.Valor
+            ELSE 0 END) AS TotalMovimentos
+    FROM `dbo.Movimentacao` m
+    INNER JOIN AtivosParaCalculo a ON m.AtivoId = a.Id
+    GROUP BY m.ClienteId, m.CustodiaId, m.AtivoId, m.DataCotizacao
+),
+-- pega ir isento. essa tabela tem o valor do imposto a ser somado nos ativos isentos de IR para que seu rendimento não fique isento de IR
+IrIsento AS (
+    SELECT
+        ir.ClienteId,
+        ir.CustodiaId,
+        ir.AtivoId,
+        ir.DataPosicao,
+        SUM(ir.ValorIsento) AS TotalIrIsento
+    FROM `nexuslegado_azuredb_hml.ir_isento_diario` ir
+    INNER JOIN AtivosParaCalculo a ON ir.AtivoId = a.Id
+    GROUP BY ir.ClienteId, ir.CustodiaId, ir.AtivoId, ir.DataPosicao
+),
+-- pega ir isento dividendos. essa tabela tem o valor do imposto a ser somado nos movimentos de dividendo pra que o seu rendimento não fique isento de IR
+Dividendos AS (
+    SELECT
+        d.ClienteId,
+        d.CustodiaId,
+        d.AtivoId,
+        d.Data,
+        SUM(d.Valor) AS TotalDividendos
+    FROM `nexuslegado_azuredb_hml.ir_dividendos` d
+    INNER JOIN AtivosParaCalculo a ON d.AtivoId = a.Id
+    GROUP BY d.ClienteId, d.CustodiaId, d.AtivoId, d.Data
+),
+-- pega posição com posição do dia anterior
+PosicoesComAnterior AS (
+    SELECT 
+        p.ClienteId,
+        p.Cliente,
+        p.CustodiaId,
+        p.Custodia,
+        p.AtivoId,
+        p.Ativo,
+        p.moeda,
+        p.local,
+        p.hiperclasse,
+        p.superclasse,
+        p.classe,
+        p.subclasse,
+        p.DataPosicao,
+        p.ValorPosicao,
+        p.ValorPosicaoBrl,
+        p.ValorPosicaoUsd,
+        LAG(p.ValorPosicao) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao) AS ValorPosicaoAnterior,
+        LAG(p.ValorPosicaoBrl) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao) AS ValorPosicaoAnteriorBrl,
+        LAG(p.ValorPosicaoUsd) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao) AS ValorPosicaoAnteriorusd
+    FROM `nexuslegado_azuredb_hml.relatorio_posicao_expandida` p
+    INNER JOIN AtivosParaCalculo a ON p.AtivoId = a.Id
+),
+-- converte movimentos pra dolar/real. Se LocalId = 1 é Brasil, se LocalId= 2 é offshore
+ValoresConvertidos AS (
+    SELECT
+        p.ClienteId,
+        p.CustodiaId,
+        p.AtivoId,
+        p.DataPosicao,
+        m.TotalMovimentos AS Movimentos,
+        -- Conversão de Movimentos
+        CASE 
+            WHEN a.LocalId = 2 THEN m.TotalMovimentos * COALESCE(cd.CotacaoDolar, 1)
+            ELSE m.TotalMovimentos
+        END AS MovimentosBrl, -- movimentos offshore em real
+        CASE 
+            WHEN a.LocalId = 1 THEN m.TotalMovimentos / COALESCE(cd.CotacaoDolar, 1)
+            ELSE m.TotalMovimentos
+        END AS MovimentosUsd, -- movimentos brasil em dólar
+        ir.TotalIrIsento AS IrIsento,
+        -- Conversão de IR Isento
+        CASE 
+            WHEN a.LocalId = 2 THEN ir.TotalIrIsento * COALESCE(cd.CotacaoDolar, 1)
+            ELSE ir.TotalIrIsento
+        END AS IrIsentoBrl, -- ir isento offshore em real
+        CASE 
+            WHEN a.LocalId = 1 THEN ir.TotalIrIsento / COALESCE(cd.CotacaoDolar, 1)
+            ELSE ir.TotalIrIsento
+        END AS IrIsentoUsd, -- ir isento brasil em dolar
+        d.TotalDividendos as Dividendos,
+        -- Conversão de Dividendos
+        CASE 
+            WHEN a.LocalId = 2 THEN d.TotalDividendos * COALESCE(cd.CotacaoDolar, 1)
+            ELSE d.TotalDividendos
+        END AS DividendosBrl, -- dividendos offshore em real
+        CASE 
+            WHEN a.LocalId = 1 THEN d.TotalDividendos / COALESCE(cd.CotacaoDolar, 1)
+            ELSE d.TotalDividendos
+        END AS DividendosUsd -- dividendos brasil em dolar
+    FROM PosicoesComAnterior p
+    LEFT JOIN Movimentacoes m ON p.ClienteId = m.ClienteId AND p.CustodiaId = m.CustodiaId AND p.AtivoId = m.AtivoId AND p.DataPosicao = m.Data
+    LEFT JOIN IrIsento ir ON p.ClienteId = ir.ClienteId AND p.CustodiaId = ir.CustodiaId AND p.AtivoId = ir.AtivoId AND p.DataPosicao = ir.DataPosicao
+    LEFT JOIN Dividendos d ON p.ClienteId = d.ClienteId AND p.CustodiaId = d.CustodiaId AND p.AtivoId = d.AtivoId AND p.DataPosicao = d.Data
+    LEFT JOIN CotacaoDolar cd ON p.DataPosicao = cd.Data
+    LEFT JOIN AtivosParaCalculo a ON p.AtivoId = a.Id
+)
+
+SELECT 
+    p.Cliente,
+    p.Custodia,
+    p.Ativo,
+    p.moeda,
+    p.local,
+    p.hiperclasse,
+    p.superclasse,
+    p.classe,
+    p.subclasse,
+    p.DataPosicao,
+    -- Cálculo do Rendimento Original
+    CASE
+        WHEN COALESCE(p.ValorPosicaoAnterior, 0) = 0 THEN
+            (p.ValorPosicao + COALESCE(vc.Movimentos, 0))
+        ELSE
+            (p.ValorPosicao 
+              + COALESCE(vc.Movimentos, 0)
+              + COALESCE(vc.IrIsento, 0)
+              + COALESCE(vc.Dividendos, 0))
+            - (COALESCE(p.ValorPosicaoAnterior, 0)
+                + COALESCE(LAG(vc.IrIsento) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao), 0))
+    END AS Rendimento,
+    -- Cálculo do Rendimento em BRL
+    CASE
+        WHEN COALESCE(p.ValorPosicaoAnteriorBrl, 0) = 0 THEN
+            (p.ValorPosicaoBrl + COALESCE(vc.MovimentosBrl, 0))
+        ELSE
+            (p.ValorPosicaoBrl 
+              + COALESCE(vc.MovimentosBrl, 0)
+              + COALESCE(vc.IrIsentoBrl, 0)
+              + COALESCE(vc.DividendosBrl, 0))
+            - (COALESCE(p.ValorPosicaoAnteriorBrl, 0)
+                + COALESCE(LAG(vc.IrIsentoBrl) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao), 0))
+    END AS RendimentoBrl,
+    -- Cálculo do Rendimento em USD
+    CASE
+        WHEN COALESCE(p.ValorPosicaoAnteriorUsd, 0) = 0 THEN
+            (p.ValorPosicaoUsd + COALESCE(vc.MovimentosUsd, 0))
+        ELSE
+            (p.ValorPosicaoUsd 
+              + COALESCE(vc.MovimentosUsd, 0)
+              + COALESCE(vc.IrIsentoUsd, 0)
+              + COALESCE(vc.DividendosUsd, 0))
+            - (COALESCE(p.ValorPosicaoAnteriorUsd, 0)
+                + COALESCE(LAG(vc.IrIsentoUsd) OVER (PARTITION BY p.ClienteId, p.CustodiaId, p.AtivoId ORDER BY p.DataPosicao), 0))
+    END AS RendimentoUsd
+FROM PosicoesComAnterior p
+LEFT JOIN ValoresConvertidos vc ON p.ClienteId = vc.ClienteId AND p.CustodiaId = vc.CustodiaId AND p.AtivoId = vc.AtivoId AND p.DataPosicao = vc.DataPosicao
+
+
