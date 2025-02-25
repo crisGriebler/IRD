@@ -1,0 +1,8 @@
+cliente;dia_semana;preco_dia;maximo_venda_dia;minimo_venda_dia;minimo_dias;maximo_dias;peso_minimo;peso_maximo;variacao_peso;qtde_max_contratada;biomassa_total;homogeneidade_lote;mes_alta_preco;mes_baixa_preco;preco_min_racao;preco_max_racao;taxa_max_conversao;mortalidade_max;mes_alta_alevinos;mes_baixa_alevinos
+Psicultura;0;7.53;4;0;100;125;500;7;75;1142;20000;0.83;1,2,3,4,9,10;Setembro;2;5;2.5;10;Janeiro;Maio
+Psicultura;1;7.51;5;0;100;125;400;8;75;1284;20000;0.85;1,2,3,4,9,10;Julho;3;5;2.5;10;Dezembro;Maio
+Psicultura;2;7.48;5;0;100;125;500;8;75;1747;20000;0.83;1,2,3,4,9,10;Maior;3;7;2.5;10;Dezembro;Maio
+Psicultura;3;7.53;5;0;100;125;300;7;75;1389;20000;0.94;1,2,3,4,9,10;Junho;3;6;2.5;10;Dezembro;Junho
+Psicultura;4;7.51;4;0;100;125;400;8;75;1276;20000;0.87;1,2,3,4,9,10;Maior;2;5;2.5;10;Marco;Maio
+Psicultura;5;7.44;0;0;100;125;400;8;75;1905;20000;0.94;1,2,3,4,9,10;Julho;2;5;2.5;10;Abril;Julho
+Psicultura;6;7.44;0;0;100;125;600;7;75;1881;20000;0.84;1,2,3,4,9,10;Setembro;2;6;2.5;10;Marco;Maio
